@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creator session 10 · Governance, IP &amp; publishing at scale - learn AI + content with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-content-with-phoebe</a> / Creator session 10 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Content with Phoebe · Creator track · Session 10 of 10</div>
+    <h1>Governance, IP &amp; publishing at scale: <span class="accent">ship a lot without shipping a problem</span></h1>
+    <p class="sub">The finale. Cadence's content engine is fast, distinctive, and edited - now it has to publish at volume without a slop piece slipping through, an IP or likeness problem going out, or an undisclosed AI post landing you in trouble. This session gives you the controls: a publish-readiness checklist, an IP-clearance and disclosure spec, and a sign-off that scales. You built the engine; tonight you make it safe to run.</p>
+    <div class="chip-row">
+      <span class="chip level">🔴 Creator track</span>
+      <span class="chip audience">Practitioners: content ops + creators + legal-adjacent</span>
+      <span class="chip audience">ChatGPT or Claude</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-2 · The finale</span>
+      <span class="a2" style="flex:4">2-20 · Risk stack, controls, sign-off</span>
+      <span class="a3" style="flex:5">20-43 · Build-along: publish-readiness + spec</span>
+      <span class="a4" style="flex:1">43-45 · Wrap</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>The last gate: safe to publish, at scale</h2>
+    </div>
+    <p class="lede">Everything works. The idea scales, the formats repurpose, the drafts are edited, the pipeline hums. That is exactly when the real risk starts, because now you are publishing a lot - and volume turns small exposures into recurring ones. One unedited slop piece, one image echoing someone's IP, one undisclosed AI endorsement, repeated across a busy channel. This is the builder mirror of leader session a4: the same governance, from the creator's seat, made into a checklist you actually run.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">★ Try it now prompt</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A publish-readiness checklist you run against a real Cadence piece before it goes out, and a written disclosure + IP-clearance spec for content: what to disclose, what to clear, and who signs off. The two artifacts that let the engine publish at volume without publishing a problem.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: THE RISK STACK ============ -->
+  <section class="section" id="risk-stack">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · what scale actually exposes</span>
+      <h2>Publishing at scale, safely: the risk stack <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">At one post a week, a mistake is an incident. At volume, the same mistake is a pattern - and patterns are what get noticed. Five risks stack up the moment you publish AI content at scale. Read the stack bottom to top: lose the foundation and everything above it wobbles.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The publish-readiness risk stack, five layers bottom to top: single source of truth, provenance, disclosure, IP and likeness, and slop at volume - each needs a control gate before publishing">
+        <defs>
+          <marker id="b10Ah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 Z" fill="#CFCADF"/>
+          </marker>
+        </defs>
+        <style>
+          .b10T { font: 700 15px Inter, sans-serif; fill: #FFFFFF; }
+          .b10Ti { font: 700 15px Inter, sans-serif; fill: #1E1B2E; }
+          .b10X { font: 400 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .b10Xi { font: 400 12.5px Inter, sans-serif; fill: #6B6786; }
+          .b10N { font: 600 14px Inter, sans-serif; fill: #1F2D07; }
+        </style>
+        <rect x="30" y="40" width="560" height="44" rx="10" fill="#4C1D95"/>
+        <text class="b10T" x="52" y="67">Slop at volume - distinctiveness lost, the channel becomes noise</text>
+        <rect x="30" y="92" width="560" height="44" rx="10" fill="#6D28D9"/>
+        <text class="b10T" x="52" y="119">IP + likeness - copyright, faces, voices across text/image/video</text>
+        <rect x="30" y="144" width="560" height="44" rx="10" fill="#7C3AED"/>
+        <text class="b10T" x="52" y="171">Undisclosed AI content - where disclosure is required (FTC)</text>
+        <rect x="30" y="196" width="560" height="44" rx="10" fill="#9061F0"/>
+        <text class="b10T" x="52" y="223">Missing provenance - no content credentials or trail</text>
+        <rect x="30" y="248" width="560" height="44" rx="10" fill="#A78BFA"/>
+        <text class="b10T" x="52" y="275">No single source of truth - voice + brief drift apart</text>
+        <rect x="628" y="118" width="222" height="96" rx="12" fill="#EEFAD9" stroke="#65A30D" stroke-width="1.5"/>
+        <text class="b10Ti" x="650" y="146">Every layer</text>
+        <text class="b10Xi" x="650" y="170">needs a control</text>
+        <text class="b10Xi" x="650" y="188">gate before</text>
+        <text class="b10Xi" x="650" y="206">it publishes.</text>
+        <line x1="612" y1="166" x2="626" y2="166" stroke="#CFCADF" stroke-width="2" marker-end="url(#b10Ah)"/>
+        <rect x="30" y="312" width="14" height="14" rx="3" fill="#65A30D"/>
+        <text class="b10N" x="54" y="324">Volume turns a one-off mistake into a pattern - the stack is what catches it.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the publish-readiness risk stack: five layers, each with a control gate</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The five risks, and why volume makes them worse<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Each risk exists at any scale. Volume is the multiplier: it removes the pause where a human would have caught it, and it repeats the exposure until it is a habit rather than a slip.</p>
+        <ul>
+          <li><strong>Slop slipping through.</strong> At volume, the edit is the first thing dropped to hit targets. Unedited AI content floods the channel, distinctiveness dies, and the audience learns to scroll past you.</li>
+          <li><strong>IP + likeness exposure.</strong> Loudest risk in this stack. AI text can echo copyrighted work; AI images and video can reproduce a living artist's style, a real face, or a recognizable voice. Every format carries it - text, image, video, and audio alike.</li>
+          <li><strong>Undisclosed AI content.</strong> Where disclosure is required - AI-generated endorsements and certain content under FTC guidance - failing to disclose is a real exposure, not a nicety.</li>
+          <li><strong>Missing provenance.</strong> No content credentials, no record of what was AI-made or edited. As authenticity practices become table stakes, no trail is its own liability.</li>
+          <li><strong>Losing the single source of truth.</strong> The voice guide and the brief are the foundation. At volume, if they drift or get bypassed, every piece drifts with them.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>The scale rule</strong>
+          A control that depends on someone remembering does not survive volume. Every risk in this stack needs a gate that runs by default - a checklist, a spec, a required sign-off - not good intentions.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Why IP and disclosure sit loudest here<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Slop is a reputation risk - slow, cumulative, recoverable. IP, likeness, and disclosure are different: they are legal and regulatory exposure, and a single published piece can trigger them. AI-generated text, images, video, and voice all carry copyright and training-data questions; using a real person's face or voice raises likeness and right-of-publicity issues; and undisclosed AI endorsements can breach FTC rules. That is why this session makes them loud - and why the controls that follow treat clearance and disclosure as required gates, not optional polish.</p>
+        <ul>
+          <li><strong>Inputs and outputs both.</strong> Do not feed others' IP or a real likeness in; and check what comes out, because AI can reproduce a style or a face you did not intend.</li>
+          <li><strong>Disclosure is a rule, not a courtesy.</strong> Where AI content or endorsements require disclosure, treat it as mandatory and build it into the workflow.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: THE CONTROLS ============ -->
+  <section class="section" id="controls">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · a control for every risk</span>
+      <h2>The controls <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">Each risk gets a specific control, and each control is a gate that runs by default. Map them one to one so nothing depends on memory. This is the operating layer that lets Cadence publish at volume with the risk stack under control.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Risk to control, one to one<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <table class="clean">
+          <thead><tr><th>The risk</th><th>The control that gates it</th></tr></thead>
+          <tbody>
+            <tr><td>Slop slipping through</td><td>The human-edit + quality gate from b9 - the five-move pass and ship/slop checklist, required before publish</td></tr>
+            <tr><td>IP + likeness exposure</td><td>An IP-clearance workflow across formats: clear the inputs, review the outputs (text/image/video/voice), check tool commercial terms</td></tr>
+            <tr><td>Undisclosed AI content</td><td>A written disclosure policy tied to FTC guidance: what to disclose, where, and in what words</td></tr>
+            <tr><td>Missing provenance</td><td>Provenance + content credentials: record what was AI-made and edited; adopt authenticity practices as they mature</td></tr>
+            <tr><td>Losing the source of truth</td><td>The content brand GPT as the single source of truth for voice + brief, plus a regular review cadence</td></tr>
+          </tbody>
+        </table>
+        <div class="callout tip">
+          <strong>The brand GPT is the spine</strong>
+          The content brand GPT you built in b8 is what keeps voice and brief consistent at volume. It is the single source of truth every piece is measured against - the anchor the other four controls hang from. Keep one, keep it current, and route work through it.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Clearance and disclosure, in practice<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Two controls do the heavy lifting, so make them concrete. IP clearance is a two-sided check: inputs (never feed others' copyrighted work or a real likeness without rights) and outputs (review AI images, video, and voice for a style, face, or voice that echoes a real person, and check the tool's commercial-use terms). Disclosure is a written policy: decide which content is AI-generated in a way that requires a label under FTC guidance, where the disclosure goes, and the exact words - then apply it every time, not case by case.</p>
+        <ul>
+          <li><strong>Clearance is inputs and outputs.</strong> Both sides fail loudly; check both before anything ships.</li>
+          <li><strong>Disclosure is written, not judged live.</strong> A policy applied consistently beats a call made in a rush.</li>
+          <li><strong>Provenance is the receipt.</strong> Content credentials and a record of what was AI-made are becoming table stakes - start the trail now.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: PUBLISH CHECKLIST + SIGN-OFF ============ -->
+  <section class="section" id="sign-off">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · who says it ships</span>
+      <h2>The publish checklist + sign-off <span class="tag concept">4 min live</span></h2>
+    </div>
+    <p class="lede">Controls only work if someone owns the gate. The publish checklist turns the risk stack into a short set of yes/no questions, and sign-off names who confirms them before a piece goes out. Ties straight back to leader session a4, from the creator's seat.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Who signs off, and the correction plan<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Sign-off scales by tiering it. Routine content gets a light gate; sensitive content gets more eyes. The point is that every piece has a named owner for the checklist, and that no piece publishes with an open item.</p>
+        <ul>
+          <li><strong>Creator signs the craft.</strong> Edited, on-voice, distinctive, first line earns the read - the b9 gate, owned by the person who made it.</li>
+          <li><strong>Editor signs the facts + fit.</strong> Every [verify] resolved, claims checked, on-brand against the source of truth.</li>
+          <li><strong>Brand or legal signs the sensitive.</strong> Anything with real likeness, others' IP, endorsements, or regulated claims gets a brand or legal review before publish - not everything, but always the sensitive.</li>
+          <li><strong>A correction + takedown plan.</strong> Decide in advance how you correct a published error and how fast you can take content down. At volume, "what do we do when one slips" is a when, not an if.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The image nobody cleared.</strong> A busy team published an AI-generated hero image that closely echoed a living illustrator's signature style. No clearance step existed, so no one caught it; the artist did. A one-line control - "AI images get an output review + a commercial-terms check before publish" - would have stopped it at the gate. The takedown was public; the checklist would have been quiet.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Tiering sign-off so it survives volume<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The failure mode is a sign-off so heavy that people route around it to hit deadlines. So tier it. Most content is low-risk and needs only the creator's own gate plus the standard checklist. A smaller slice - real people, others' IP, endorsements, regulated or sensitive claims - gets an extra editor or brand/legal pass. Match the weight of the gate to the risk of the piece, and the controls stay used instead of bypassed. Ties back to a4: governance that is proportional is governance that actually runs.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>Run a publish-readiness checklist on a Cadence piece <span class="tag demo">★ 13 min · everyone builds</span></h2>
+    </div>
+    <p class="lede">Take one Cadence piece you built earlier in the track - a post, an article, a visual, a video script - and run it through the publish gate for real. This is the finale in one exercise: prove the engine can ship without shipping a problem.</p>
+
+    <div class="steps">
+      <div class="step"><p>Pick one real piece. Something you actually made in b4-b8, ideally with an AI image or an external reference in it so the IP checks bite.</p></div>
+      <div class="step"><p>Edited? Confirm the b9 anti-slop pass ran - cliches cut, specifics in, POV sharp, voice on. If not, run it now. No unedited piece passes.</p></div>
+      <div class="step"><p>Facts verified? Check every claim, stat, quote, and date. No live [verify] tags. If you cannot verify it, cut it or replace it.</p></div>
+      <div class="step"><p>IP cleared? Inputs rights-clear, outputs reviewed for a style/face/voice that echoes a real person, tool commercial terms checked. Disclosed where AI use requires it.</p></div>
+      <div class="step"><p>On-voice + signed? Measure it against the brand GPT source of truth, then apply the right sign-off tier. Only when every box is yes does it publish.</p></div>
+    </div>
+
+    <div class="prompt-box good"><span class="label">★ The publish-readiness prompt (you still make every call)</span>Here is a piece I am about to publish: [paste, or describe the visual/video].
+Run a publish-readiness review as a yes/no checklist:
+1) Edited - anti-slop pass done (cliches cut, real specifics, POV, on-voice)?
+2) Facts - every claim, stat, quote, date verified; no open [verify]?
+3) IP - inputs rights-clear, outputs reviewed for likeness/style, tool terms ok?
+4) Disclosure - AI use disclosed where required?
+5) Source of truth - on-brand against our voice + brief?
+List what fails and why. I will resolve each item before publishing.</div>
+
+    <div class="callout tip">
+      <strong>The gate is the deliverable</strong>
+      If the piece passes, you have proof the engine is safe to run. If it fails, you just caught - quietly, at the gate - something that would otherwise have been a public correction. Both outcomes are the win.
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>Write Cadence's disclosure + IP-clearance spec <span class="tag demo">★ 8 min · build your own</span></h2>
+    </div>
+    <p class="lede">Turn the two loudest controls into a written spec the whole team runs. Not a philosophy - a one-page document that says exactly what to disclose, what to clear, and who signs off. You draft it with AI, then edit it to your reality.</p>
+
+    <div class="steps">
+      <div class="step"><p>Give AI the two rails and your context: the formats you publish, which use real people or external references, and who is on the team (creator, editor, brand/legal).</p></div>
+      <div class="step"><p>Ask for two sections. Disclosure: what content must be labelled as AI, where the label goes, and the exact wording, tied to FTC guidance. IP clearance: the input rules and the output review for text, image, video, and voice, plus the tool-terms check.</p></div>
+      <div class="step"><p>Add the sign-off tiers: routine (creator + checklist), standard (+ editor), sensitive (+ brand/legal). Name who owns each gate.</p></div>
+      <div class="step"><p>Edit it hard to your reality, add a correction + takedown line, and adopt it. This is the spec that makes the whole engine safe to run at scale.</p></div>
+    </div>
+
+    <div class="prompt-box good"><span class="label">★ The disclosure + IP-clearance spec prompt</span>Draft a one-page "disclosure + IP-clearance spec" for our content team.
+Context: we publish [formats/channels]; some use real people or external references;
+team roles are creator, editor, and brand/legal.
+
+Two sections:
+1) Disclosure - what AI content we must label (per FTC guidance), where the label goes,
+   and the exact wording.
+2) IP clearance - input rules (no others' IP or real likeness without rights) and an
+   output review for text, image, video, voice, plus a tool commercial-terms check.
+Add sign-off tiers: routine (creator + checklist), standard (+ editor),
+sensitive (+ brand/legal), and a correction/takedown line.
+Plain language, one page. I will edit it to fit our team.</div>
+
+    <div class="callout win">
+      <strong>You built Cadence's content engine - creator track complete</strong>
+      Ten sessions: from what AI is and the two rails, through the idea, repurposing, long-form, social, visuals, video, and the pipeline, to the anti-slop edit and now the governance that lets it all publish safely at scale. You did not just learn the tools - you built a real content operation, end to end, that is fast, distinctive, and safe to run. That is the whole engine. Well done.
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 30-45 min total</span></h2>
+    </div>
+    <ul>
+      <li>Run the publish-readiness checklist on three real pieces before they go out this week. Note which gate catches the most - that is where your risk actually lives.</li>
+      <li>Finalise your disclosure + IP-clearance spec and share it with your team. A spec no one has read is not a control.</li>
+      <li>Write your correction + takedown plan: exactly how you fix a published error and how fast you can pull content down. Decide it now, not mid-incident.</li>
+      <li>Set a review cadence for the brand GPT source of truth - monthly is a fine start. Voice and brief drift if no one tends them.</li>
+      <li>Optional: audit one channel for undisclosed AI content and missing provenance, and bring it up to your new spec. Then look back at all ten sessions - you have a real engine now.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Taught from the regulatory + IP canon and provenance practice, mirroring leader session a4 from the creator's seat. Certificates and legal advice stay official - this is a builder's checklist, not counsel. This session covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Regulatory + IP canon - copyright, likeness, right-of-publicity</span><span class="note">Part 1-2 · IP + likeness across text/image/video/voice, clearance workflow</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">FTC disclosure of AI content</span><span class="note">Part 2 · disclosure policy - what, where, and the words</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Provenance / authenticity - content credentials, watermarking</span><span class="note">Part 1-2 · the trail as table stakes (re-verify - moves fast)</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Governance canon - mirrors leader session a4</span><span class="note">Part 3 · publish checklist, tiered sign-off, correction plan</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · What is in the publish-at-scale risk stack?</p>
+      <button class="qopt" type="button">A · Only slop - if it is edited, nothing else matters</button>
+      <button class="qopt" type="button">B · Only legal risk - IP and disclosure, nothing about quality</button>
+      <button class="qopt" type="button">C · Slop at volume, IP + likeness, undisclosed AI, missing provenance, and losing the source of truth</button>
+      <p class="qwhy">Five risks stack up at volume. Each needs its own control gate that runs by default, because scale turns a one-off mistake into a repeating pattern.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · Why do IP clearance and disclosure matter more at scale?</p>
+      <button class="qopt" type="button">A · Volume turns single exposures into recurring ones, and each one is legal/regulatory risk a single published piece can trigger</button>
+      <button class="qopt" type="button">B · They do not - they only matter for large companies</button>
+      <button class="qopt" type="button">C · Because AI output is automatically cleared and disclosed for you</button>
+      <p class="qwhy">Unlike slop (slow, recoverable reputation risk), IP, likeness, and disclosure are legal and regulatory exposure that one piece can trigger - and volume repeats the exposure until it is a pattern. So clearance and disclosure are required gates, not polish.</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">3 · What has to happen before an AI-assisted piece publishes at scale?</p>
+      <button class="qopt" type="button">A · Nothing - if the pipeline made it, it is ready to ship</button>
+      <button class="qopt" type="button">B · A human sign-off against the publish checklist - edited, facts verified, IP cleared, disclosed, on-voice - tiered by risk</button>
+      <button class="qopt" type="button">C · Only a spell-check and a quick look</button>
+      <p class="qwhy">Every piece needs a named owner running the publish gate, tiered by risk: creator for craft, editor for facts + fit, brand/legal for the sensitive. No piece publishes with an open item, and there is a correction/takedown plan for when one slips.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Creator session 10 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The scale rule</b><span>volume turns a one-off mistake into a pattern. Every risk needs a gate that runs by default, not memory.</span></div>
+      <div class="cheat-item"><b>The risk stack</b><span>slop at volume · IP + likeness · undisclosed AI · missing provenance · losing the source of truth.</span></div>
+      <div class="cheat-item"><b>IP + likeness loudest</b><span>copyright, faces, voices across text/image/video/voice - legal risk one published piece can trigger. Clear inputs + outputs.</span></div>
+      <div class="cheat-item"><b>Disclosure is written</b><span>a policy tied to FTC: what to label, where, and the exact words. Applied every time, not judged live.</span></div>
+      <div class="cheat-item"><b>The controls</b><span>b9 edit + quality gate · IP-clearance workflow · disclosure policy · provenance · the brand GPT source of truth + review cadence.</span></div>
+      <div class="cheat-item"><b>Publish checklist</b><span>edited? facts verified? IP cleared? disclosed? on-voice? Every box yes before it ships.</span></div>
+      <div class="cheat-item"><b>Sign-off, tiered</b><span>creator (craft) · editor (facts + fit) · brand/legal (sensitive) · plus a correction + takedown plan.</span></div>
+      <div class="cheat-item"><b>Engine complete</b><span>ten sessions, one content engine - fast, distinctive, and safe to run at scale. You built it.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Creator session 10 of 10 · learn-ai-content-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b9-quality-anti-slop.html">← Previous: Quality, editing &amp; the anti-slop pass</a> &nbsp;·&nbsp; <a href="../index.html">← Back to all sessions</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leader session 2 · The content use-case + risk map: score the bets - learn AI + content with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-content-with-phoebe</a> / Leader session 2 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Content with Phoebe · Leader track · Session 2 of 6</div>
+    <h1>The content use-case + risk map: <span class="accent">score the bets</span></h1>
+    <p class="sub">Not every AI content use-case is worth taking, and not every one is safe. This session gives you a simple scoring grid - value against risk - so you can tell a quick win from a reputational landmine before you commit the team. You will walk out with a scored shortlist and your first bet chosen. No code, no tools - just the judgment call that decides where AI helps and where it hurts.</p>
+    <div class="chip-row">
+      <span class="chip level">🟢 Leader track</span>
+      <span class="chip audience">Leaders: heads of content · brand · comms</span>
+      <span class="chip audience">No code, ever</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-2 · Frame</span>
+      <span class="a2" style="flex:4">2-16 · Value vs risk grid</span>
+      <span class="a3" style="flex:4">16-34 · Inventory + sequencing</span>
+      <span class="a4" style="flex:1">34-45 · Score your bets</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where this sits in the track</h2>
+    </div>
+    <p class="lede">In a1 you named the shift: quality is the moat, and your job is to set the bar and govern the rails. This session turns that into a decision tool. Content AI can do a dozen things, but they do not carry the same value or the same risk - and treating them as one bucket is how teams either stall out of caution or blunder into an IP or slop problem. You will score each use-case on value versus risk, read the pattern, and pick a first bet you can defend. Every concept section ends with the questions to take back to your team.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A scoring grid you can reuse for any new AI content idea, a scored shortlist of your real use-cases plotted by value and risk, a clear read on which bets are quick wins and which need rights and disclosure checks first, and your first bet chosen with a reason you can stand behind.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: THE SCORING GRID ============ -->
+  <section class="section" id="grid">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · the one tool this session gives you</span>
+      <h2>Value vs risk: the scoring grid <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">Score every AI content use-case on two axes. Value is what it buys you: speed, reach, and repurposing leverage. Risk is what it can cost you: slop and brand dilution, IP and likeness exposure, disclosure obligations, and factual error. Plot each use-case and the picture tells you what to do - top-left is a quick win to take now, top-right is high value but needs the rights cleared first, and anything that trades low value for high risk you simply avoid.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A value versus risk matrix for AI content use-cases: repurposing and draft-and-edit sit top-left as high-value low-risk quick wins, AI visuals and AI video sit top-right as high value but high risk needing rights clearance, and autopublish unedited sits bottom-right in the avoid zone">
+        <style>
+          .a2vD { font: 700 13px Inter, sans-serif; fill: #1E1B2E; }
+          .a2vL { font: 700 13px Inter, sans-serif; fill: #1E1B2E; }
+          .a2vQ { font: 600 12.5px Inter, sans-serif; fill: #6B6786; }
+          .a2vA { font: 600 13px Inter, sans-serif; fill: #6B6786; }
+          .a2vN { font: 600 14px Inter, sans-serif; fill: #1F2D07; }
+        </style>
+        <!-- plot background -->
+        <rect x="70" y="40" width="760" height="240" rx="8" fill="#F5F3FF"/>
+        <!-- quick-win quadrant top-left -->
+        <rect x="70" y="40" width="380" height="120" fill="#EEFAD9"/>
+        <!-- dividers -->
+        <line x1="450" y1="40" x2="450" y2="280" stroke="#CFCADF" stroke-width="1.5"/>
+        <line x1="70" y1="160" x2="830" y2="160" stroke="#CFCADF" stroke-width="1.5"/>
+        <!-- quadrant labels -->
+        <text class="a2vQ" x="82" y="58">Quick wins - take now</text>
+        <text class="a2vQ" x="620" y="58">High value · clear the rights</text>
+        <text class="a2vQ" x="82" y="276">Low stakes</text>
+        <text class="a2vQ" x="700" y="276">Avoid</text>
+        <!-- dots -->
+        <circle cx="200" cy="92" r="9" fill="#7C3AED"/>
+        <text class="a2vL" x="200" y="118" text-anchor="middle">Repurpose</text>
+        <circle cx="340" cy="128" r="9" fill="#7C3AED"/>
+        <text class="a2vL" x="340" y="150" text-anchor="middle" font-size="12.5" fill="#65A30D">Draft + edit</text>
+        <circle cx="560" cy="95" r="9" fill="#7C3AED"/>
+        <text class="a2vL" x="560" y="121" text-anchor="middle">AI visuals</text>
+        <circle cx="690" cy="132" r="9" fill="#7C3AED"/>
+        <text class="a2vL" x="690" y="122" text-anchor="middle">AI video</text>
+        <circle cx="690" cy="235" r="9" fill="#4C1D95"/>
+        <text class="a2vL" x="690" y="261" text-anchor="middle">Autopublish ✗</text>
+        <!-- axes -->
+        <line x1="70" y1="280" x2="830" y2="280" stroke="#1E1B2E" stroke-width="1.5"/>
+        <line x1="70" y1="40" x2="70" y2="280" stroke="#1E1B2E" stroke-width="1.5"/>
+        <text class="a2vA" x="450" y="304" text-anchor="middle">Risk - low to high →</text>
+        <text class="a2vA" x="30" y="160" text-anchor="middle" transform="rotate(-90 30 160)">Value - low to high →</text>
+        <!-- warm note -->
+        <rect x="70" y="318" width="14" height="14" rx="3" fill="#65A30D"/>
+        <text class="a2vN" x="94" y="330">Start top-left - high value, low risk, edited. Move top-right only with rights + disclosure checks.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - AI content use-cases plotted by value and risk</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Reading the four quadrants<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The grid is not about being cautious or bold - it is about matching your appetite to the actual stakes of each use-case. Two questions decide everything: how much does this genuinely buy us, and what is the worst it could cost us. Score both honestly and the quadrant tells you the move.</p>
+        <ul>
+          <li><strong>Top-left - quick wins.</strong> High value, low risk: repurposing, and drafting that a human edits. Take these now; they compound speed with almost no exposure.</li>
+          <li><strong>Top-right - clear the rights.</strong> High value, high risk: AI visuals, AI video and voice. Worth doing, but only after IP, likeness, and disclosure checks. We govern these fully in a4.</li>
+          <li><strong>Bottom-left - low stakes.</strong> Low value, low risk: fine to experiment, but do not mistake motion for progress.</li>
+          <li><strong>Bottom-right - avoid.</strong> Low value, high risk: autopublishing unedited content is the clearest example. The speed is not worth the slop and the exposure.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>Questions to ask your team</strong>
+          <ul>
+            <li>For each thing we already do with AI, which quadrant is it really in - and did we ever score it, or just start?</li>
+            <li>Are we sitting in the low-stakes quadrant calling it innovation, while the real quick wins go untaken?</li>
+            <li>Is anything of ours in the avoid quadrant right now?</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Scoring value and risk honestly<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Give each axis a simple high/medium/low. On value, weigh speed (how much time it saves), reach (how many channels it feeds), and repurposing leverage (how far one brief travels). On risk, weigh slop and brand dilution, IP and likeness exposure, disclosure obligations, and factual error. The discipline is to score risk before you fall in love with the value - a use-case that saves a week is not a quick win if it puts a real person's likeness or a fabricated stat under your brand.</p>
+        <div class="callout tip">
+          <strong>Questions to ask your team</strong>
+          <ul>
+            <li>When we score value, do we count reach and leverage, or just how fast it feels?</li>
+            <li>Who on the team is responsible for scoring the risk side, and do they have the authority to say no?</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: THE INVENTORY ============ -->
+  <section class="section" id="inventory">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · the map applied to real content work</span>
+      <h2>The content use-case inventory <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">Here is the grid applied across the content work most teams actually do. Value and risk are typical, not fixed - your context can move any row - but the pattern holds: the safe leverage is in ideation, drafting, and repurposing, and the risk climbs sharply as you move into likeness, video, voice, and anything that publishes without a human.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The inventory table<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <table class="clean">
+          <thead><tr><th>Use-case</th><th>Value</th><th>Risk</th><th>Verdict</th></tr></thead>
+          <tbody>
+            <tr><td>Ideation - angles, hooks, headlines</td><td>Medium</td><td>Low</td><td>Take now - human picks</td></tr>
+            <tr><td>Drafting - first drafts to edit</td><td>High</td><td>Low</td><td>Quick win - always edit</td></tr>
+            <tr><td>Repurposing - one brief to many formats</td><td>High</td><td>Low</td><td>Quick win - best leverage</td></tr>
+            <tr><td>Long-form - articles, scripts</td><td>High</td><td>Medium</td><td>Yes - fact-check hard</td></tr>
+            <tr><td>Social - posts, threads at scale</td><td>High</td><td>Medium</td><td>Yes - keep the voice</td></tr>
+            <tr><td>Visual - images, graphics, covers</td><td>High</td><td>High</td><td>Clear IP + rights first</td></tr>
+            <tr><td>Video + voice - AI video, cloned voice</td><td>High</td><td>High</td><td>Rights + likeness + disclose</td></tr>
+            <tr><td>Editing - anti-slop, tighten, fact-flag</td><td>Medium</td><td>Low</td><td>Take now - assists the human</td></tr>
+            <tr><td>Autopublish - unedited to channel</td><td>Low</td><td>High</td><td>Avoid - no human, no ship</td></tr>
+          </tbody>
+        </table>
+        <p>Notice the shape: everything AI touches early in the flow (ideate, draft, repurpose, edit) is low-risk leverage; everything that carries a likeness, a rights question, or no human at the end is where the exposure lives. That is exactly the order the creator track builds in, and the order you should adopt.</p>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The rights bill nobody scored.</strong> A team shipped an AI-generated campaign visual that echoed a living illustrator's signature style. It looked great and cost nothing to make - until the complaint arrived. Pulling it, replacing it, and the legal review cost more than a year of the tool. The visual sat in the top-right quadrant the whole time; nobody scored the risk axis before publishing.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Why the risk axis exists at all<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Value alone would tell you to do everything, fast. The risk axis is what keeps speed from becoming a liability, and it captures two very different dangers. The first is slop - brand dilution from publishing average content at volume, the quiet cost from a1. The second is exposure - IP and likeness of AI outputs, disclosure obligations, and fabricated facts, the sharp cost we govern in a4. A grid with only a value axis is how a team talks itself into the avoid quadrant.</p>
+        <div class="callout tip">
+          <strong>Questions to ask your team</strong>
+          <ul>
+            <li>Do we treat slop and legal exposure as the same kind of risk, or price them separately?</li>
+            <li>Which row in this inventory would hurt us most if it went wrong - and have we protected it?</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: SEQUENCING ============ -->
+  <section class="section" id="sequencing">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · the order that earns trust</span>
+      <h2>Sequencing: earn trust before you climb <span class="tag concept">4 min live</span></h2>
+    </div>
+    <p class="lede">A scored grid tells you what is worth doing; sequencing tells you in what order. The rule is simple and it protects both your brand and your team's credibility: start where value is high and risk is low, keep the human edit, prove the quality bar holds, and only then move into the high-risk, high-value work with the rights and disclosure checks in place.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The order to adopt<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>First - the quick wins.</strong> Ideation, repurposing, and drafting-to-edit. High value, low risk, and they build the team's fluency and your evidence that the quality bar works.</li>
+          <li><strong>Always - keep the human edit.</strong> Every step above ships through a person. This is rail one from a1, and it is what makes the quick wins safe rather than just fast.</li>
+          <li><strong>Then - the high-value, high-risk work.</strong> Visual, video, and voice, gated by the IP, likeness, and disclosure checks you set in a4. You move here because you earned the trust, not because the tool got tempting.</li>
+          <li><strong>Never yet - unedited autopublish.</strong> That is era-three agentic work, and a1 was clear: it waits until the bar and the governance can run without a human in every loop.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>Questions to ask your team</strong>
+          <ul>
+            <li>Have we taken the quick wins first, or did we chase the flashy high-risk use-case before the bar was proven?</li>
+            <li>What is the one signal that would tell us we have earned the right to climb to the next quadrant?</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>How this connects to the rest of the track<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Your scored shortlist is the input to everything that follows. a3 sets the quality bar and brand voice that makes the quick wins distinctive rather than just fast. a4 supplies the IP, likeness, and disclosure gates that unlock the top-right quadrant. a5 designs the operating model and ROI so you measure these bets by outcome, not output. a6 sequences the whole strategy and the move toward agentic. Score well tonight and the next four sessions have a real agenda instead of a hypothetical one.</p>
+        <div class="callout tip">
+          <strong>Questions to ask your team</strong>
+          <ul>
+            <li>If a3 raised our quality bar next week, which scored bets would move up the value axis?</li>
+            <li>Which top-right use-case do we most want a4 to unlock - and why that one first?</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ EXERCISE ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Exercise</span>
+      <h2>Score five real use-cases and pick your first bet <span class="tag exercise">◐ 25-35 min · decide tonight</span></h2>
+    </div>
+    <p class="lede">The decision this session exists for. Not a hypothetical - your real content work, scored, so you leave with a first bet you can defend to your team and your leadership.</p>
+    <ul>
+      <li>List five AI content use-cases your team is doing or seriously considering. Be specific: "repurpose the weekly article into five social posts", not "social".</li>
+      <li>Score each on value (high/medium/low across speed, reach, leverage) and risk (high/medium/low across slop, IP/likeness, disclosure, factual error).</li>
+      <li>Plot all five on the grid. Circle the quick wins in the top-left and flag anything sitting in the bottom-right avoid zone.</li>
+      <li>Pick your first bet: the highest-value, lowest-risk use-case you are not yet doing well. Write one sentence on why it, and one on how you will keep the human edit.</li>
+      <li>Note which one bet you most want to unlock later, and what check a4 would have to give you before you take it.</li>
+    </ul>
+    <div class="callout tip">
+      <strong>Questions to ask your team</strong>
+      <ul>
+        <li>Does everyone score the same use-case the same way - and if not, whose read on the risk axis wins?</li>
+        <li>What is stopping us from starting our first bet on Monday?</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Framed from public 2026 content guides and the IP canon. Certificates and paid tooling stay official. This session covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">2026 AI content-scaling + creative-automation guides</span><span class="note">Part 1-2 · value of speed, reach, repurposing leverage</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Regulatory + IP canon</span><span class="note">Part 1-2 · risk axis - copyright, likeness, disclosure</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Content-craft + anti-slop practice</span><span class="note">Part 2-3 · slop as brand-dilution risk, full depth in a3</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">IP / disclosure / provenance canon</span><span class="note">Part 3 · gates for the top-right quadrant, governed in a4</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · What makes a strong first bet on the grid?</p>
+      <button class="qopt" type="button">A · The most exciting use-case, whatever its risk</button>
+      <button class="qopt" type="button">B · High value and low risk, with the human edit kept - a top-left quick win like repurposing or draft-and-edit</button>
+      <button class="qopt" type="button">C · Whatever removes humans from the process fastest</button>
+      <p class="qwhy">Start top-left: high value, low risk, always edited. It compounds speed with almost no exposure and proves your quality bar before you climb.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">2 · Why does the map have a risk axis at all?</p>
+      <button class="qopt" type="button">A · To slow the team down on principle</button>
+      <button class="qopt" type="button">B · Because value never matters</button>
+      <button class="qopt" type="button">C · Because speed can cost you - slop and brand dilution, plus IP, likeness, disclosure, and factual error - so value alone would tell you to do everything</button>
+      <p class="qwhy">The risk axis captures two dangers: the quiet cost of slop and the sharp cost of IP and disclosure exposure. Score risk before you fall for the value.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · What is the right sequencing for AI content use-cases?</p>
+      <button class="qopt" type="button">A · Start high-value low-risk with the human edit, prove the bar, then move to visual/video with IP and disclosure checks - never unedited autopublish yet</button>
+      <button class="qopt" type="button">B · Do the highest-risk, flashiest work first to look ahead</button>
+      <button class="qopt" type="button">C · Automate everything to autopublish on day one</button>
+      <p class="qwhy">Earn trust before you climb. Quick wins first, human edit always, high-risk work only once a4's gates are in place, agentic autopublish not yet.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Leader session 2 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The scoring grid</b><span>plot every use-case on value (speed, reach, leverage) vs risk (slop, IP/likeness, disclosure, error).</span></div>
+      <div class="cheat-item"><b>Top-left - quick wins</b><span>high value, low risk: repurposing, draft-and-edit. Take now, always edit.</span></div>
+      <div class="cheat-item"><b>Top-right - clear rights</b><span>high value, high risk: AI visuals, video, voice. Worth it only after IP + disclosure checks (a4).</span></div>
+      <div class="cheat-item"><b>Bottom-right - avoid</b><span>low value, high risk: unedited autopublish. Speed is not worth the slop and exposure.</span></div>
+      <div class="cheat-item"><b>Two risks, priced apart</b><span>slop = brand dilution (quiet cost); exposure = IP, likeness, disclosure, fabricated facts (sharp cost).</span></div>
+      <div class="cheat-item"><b>Sequencing</b><span>quick wins first, keep the human edit, then high-risk work with rights checks, autopublish not yet.</span></div>
+      <div class="cheat-item"><b>Your first bet</b><span>highest value, lowest risk, not yet done well - defensible in one sentence, edit kept.</span></div>
+      <div class="cheat-item"><b>Feeds the track</b><span>scored shortlist -> a3 quality bar -> a4 IP gates -> a5 operating model -> a6 strategy.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Leader session 2 of 6 · learn-ai-content-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="a1-ai-first-content.html">← Previous: The AI-first content function</a> &nbsp;·&nbsp; <a href="a3-brand-voice-anti-slop.html">Next: Brand voice, quality &amp; the anti-slop standard →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

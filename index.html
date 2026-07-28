@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>learn AI + content with phoebe - a two-track course for content at scale, without the slop</title>
+<link rel="stylesheet" href="assets/style.css?v=1">
+<style>
+  .stats-row { display: flex; gap: 2.4rem; margin-top: 1.5rem; flex-wrap: wrap; }
+  .stat b { display: block; font-size: 2.1rem; font-weight: 800; line-height: 1.05; font-variant-numeric: tabular-nums; }
+  .stat span { font-size: .72rem; opacity: .85; text-transform: uppercase; letter-spacing: .09em; font-weight: 600; }
+
+  .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .course-card {
+    border: 1px solid var(--hairline);
+    border-top: 4px solid var(--diff, var(--indigo));
+    border-radius: var(--radius);
+    padding: 1.2rem 1.3rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-decoration: none;
+    color: var(--ink);
+    background: #fff;
+    transition: box-shadow .15s ease, border-color .15s ease, transform .15s ease;
+    position: relative;
+  }
+  .course-card:hover { border-color: var(--indigo-soft); border-top-color: var(--diff, var(--indigo)); box-shadow: 0 8px 28px rgba(124,58,237,.15); transform: translateY(-3px); }
+  .course-card .cicon { font-size: 1.7rem; line-height: 1; }
+  .course-card .cnum { font-size: .72rem; font-weight: 700; color: var(--indigo); text-transform: uppercase; letter-spacing: .1em; }
+  .course-card h3 { font-size: 1.05rem; font-weight: 800; line-height: 1.3; }
+  .course-card p { font-size: .85rem; color: var(--muted); flex: 1; }
+  .course-card .meta { display: flex; gap: .4rem; flex-wrap: wrap; }
+
+  .diff-legend { display: flex; gap: 1rem; margin-top: 1.6rem; font-size: .74rem; color: var(--muted); font-weight: 600; flex-wrap: wrap; }
+  .diff-legend i { display: inline-block; width: .85rem; height: .35rem; border-radius: 999px; margin-right: .35rem; vertical-align: middle; }
+
+  .paths { margin-top: 2.6rem; }
+  .paths h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .3rem; }
+  .paths .plede { color: var(--muted); font-size: .92rem; margin-bottom: .8rem; }
+  .path { display: flex; gap: .55rem; align-items: center; padding: .75rem 0; border-bottom: .5px solid var(--hairline); flex-wrap: wrap; }
+  .path:last-child { border-bottom: none; }
+  .path b { min-width: 15.5rem; font-size: .9rem; }
+  .path .pstep { background: var(--indigo-50); color: var(--indigo); border-radius: 999px; padding: .16rem .68rem; font-weight: 700; font-size: .8rem; text-decoration: none; transition: all .12s ease; }
+  .path .pstep:hover { background: var(--indigo); color: #fff; }
+  .path .parr { color: var(--faint); font-weight: 700; }
+
+  .mm-section { margin-top: 1.6rem; }
+  .mm-section h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .2rem; }
+  .mm-section .mm-lede { color: var(--muted); font-size: .92rem; margin-bottom: .4rem; }
+  .mm-wrap { border: 1px solid var(--hairline); border-radius: var(--radius); background: linear-gradient(180deg,#fff,#EFEBFB); padding: .6rem; overflow-x: auto; }
+  .mm-svg { width: 100%; height: auto; display: block; max-width: 60rem; margin: 0 auto; min-width: 34rem; }
+  .mm-link { cursor: pointer; text-decoration: none; }
+  .mm-node rect { transition: opacity .15s ease, filter .15s ease; }
+  .mm-node text { pointer-events: none; }
+  .mm-link:hover .mm-node rect { filter: brightness(1.06); }
+  .mm-edge { transition: opacity .15s ease; }
+
+  .rail { margin-top: 1.4rem; border: 1px solid var(--hairline); border-left: 4px solid var(--amber); border-radius: var(--radius); background: var(--amber-50); padding: 1rem 1.2rem; font-size: .9rem; }
+  .rail b { color: var(--amber-ink); }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Content with Phoebe</div>
+    <h1>Two tracks for content at scale, <span class="accent">without the slop</span></h1>
+    <p class="sub">A leader track that teaches content leaders to run an AI content operation - voice, quality, IP, and ROI - without a line of code, and a creator track that builds a real content engine end to end: one idea turned into long-form, social, visual, and video, on brand and at speed. AI can compress multi-channel production by 60 to 70%. The trick is doing it fast without sounding like everyone else.</p>
+    <div class="stats-row">
+      <div class="stat"><b data-count="2">2</b><span>tracks</span></div>
+      <div class="stat"><b data-count="16">16</b><span>sessions</span></div>
+      <div class="stat"><b data-count="45">45</b><span>min per session</span></div>
+      <div class="stat"><b data-count="65">65</b><span>% faster multi-channel production</span></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>The leader track 🤝 <span style="font-size:.85rem;font-weight:600;color:var(--muted)">· for heads of content, brand &amp; comms · 6 x 45 min · no code, ever</span></h2>
+      <p class="plede">Thinking mode: where AI wins in content, how to hold the quality bar and the brand voice at scale, how to govern IP and disclosure, and how to measure real content ROI - each session ends with the questions to ask your team.</p>
+    </div>
+    <div class="course-grid">
+      <a class="course-card" href="courses/a1-ai-first-content.html" style="--diff:#34D399">
+        <span class="cicon">✨</span>
+        <span class="cnum">Leader 1 · easy</span>
+        <h3>The AI-first content function</h3>
+        <p>The volume-versus-quality paradox, where AI genuinely wins, and the map of the content function in the AI age.</p>
+        <span class="meta"><span class="pill amber">▶ Leaders start here</span></span>
+      </a>
+      <a class="course-card" href="courses/a2-content-use-case-risk-map.html" style="--diff:#34D399">
+        <span class="cicon">🎯</span>
+        <span class="cnum">Leader 2 · easy</span>
+        <h3>The content use-case + risk map</h3>
+        <p>Score AI bets across the content lifecycle - weighed against slop, brand dilution, IP, and disclosure risk.</p>
+        <span class="meta"><span class="pill light">Prioritization exercise</span></span>
+      </a>
+      <a class="course-card" href="courses/a3-brand-voice-anti-slop.html" style="--diff:#FBBF24">
+        <span class="cicon">🎙️</span>
+        <span class="cnum">Leader 3 · medium</span>
+        <h3>Brand voice, quality &amp; the anti-slop standard</h3>
+        <p>Holding a consistent voice and a real quality bar at scale - and why the human edit is the whole game.</p>
+        <span class="meta"><span class="pill light">Quality-bar exercise</span></span>
+      </a>
+      <a class="course-card" href="courses/a4-ip-disclosure-governance.html" style="--diff:#FBBF24">
+        <span class="cicon">🛡️</span>
+        <span class="cnum">Leader 4 · medium</span>
+        <h3>IP, disclosure &amp; content governance</h3>
+        <p>Copyright and likeness in AI content, FTC disclosure, provenance and authenticity, and the policy that holds.</p>
+        <span class="meta"><span class="pill light">Governance checklist</span></span>
+      </a>
+      <a class="course-card" href="courses/a5-content-ops-roi.html" style="--diff:#FB923C">
+        <span class="cicon">⚙️</span>
+        <span class="cnum">Leader 5 · deciding</span>
+        <h3>The content ops model &amp; ROI</h3>
+        <p>The pipeline, the roles, and how to measure content value - outcomes and reuse, not raw volume.</p>
+        <span class="meta"><span class="pill light">Business-case exercise</span></span>
+      </a>
+      <a class="course-card" href="courses/a6-content-strategy-future.html" style="--diff:#FB923C">
+        <span class="cicon">🔭</span>
+        <span class="cnum">Leader 6 · deciding</span>
+        <h3>Content strategy &amp; the agentic future</h3>
+        <p>Agentic content pipelines, the 24-month roadmap, and the narrative that gets a content operation funded.</p>
+        <span class="meta"><span class="pill light">Roadmap exercise</span></span>
+      </a>
+    </div>
+
+    <div class="paths">
+      <h2>The creator track 🛠️ <span style="font-size:.85rem;font-weight:600;color:var(--muted)">· for creators &amp; content teams · 10 x 45 min · ChatGPT / Claude, no code</span></h2>
+      <p class="plede">One growing content engine: you build Cadence's, turning a single idea into long-form, social, visual, and video - on brand, at speed, and edited to a standard. Every session adds a piece of a real content operation.</p>
+    </div>
+    <div class="course-grid">
+      <a class="course-card" href="courses/b1-ai-foundations-creators.html" style="--diff:#34D399">
+        <span class="cicon">🤖</span>
+        <span class="cnum">Creator 1 · easy</span>
+        <h3>AI foundations for content creators</h3>
+        <p>What AI does well and badly for content, the tool landscape, and the two rails that keep the work yours.</p>
+        <span class="meta"><span class="pill amber">▶ Creators start here</span></span>
+      </a>
+      <a class="course-card" href="courses/b2-idea-and-brief.html" style="--diff:#34D399">
+        <span class="cicon">💡</span>
+        <span class="cnum">Creator 2 · easy</span>
+        <h3>The idea + the brief</h3>
+        <p>The core idea that is worth scaling - and the brief that turns it into content only you could make.</p>
+        <span class="meta"><span class="pill light">Content brief</span></span>
+      </a>
+      <a class="course-card" href="courses/b3-one-idea-many-formats.html" style="--diff:#FBBF24">
+        <span class="cicon">🔀</span>
+        <span class="cnum">Creator 3 · medium</span>
+        <h3>One idea → many formats</h3>
+        <p>Turn one idea into platform-native pieces - with a live simulator that shows the fit climb as you tailor.</p>
+        <span class="meta"><span class="pill light">★ interactive: content-live</span></span>
+      </a>
+      <a class="course-card" href="courses/b4-long-form-writing.html" style="--diff:#FBBF24">
+        <span class="cicon">📝</span>
+        <span class="cnum">Creator 4 · medium</span>
+        <h3>Long-form writing</h3>
+        <p>Articles, newsletters, and scripts drafted at speed - on brand, structured, and stripped of the AI tells.</p>
+        <span class="meta"><span class="pill light">Cadence article</span></span>
+      </a>
+      <a class="course-card" href="courses/b5-short-form-social.html" style="--diff:#FBBF24">
+        <span class="cicon">📱</span>
+        <span class="cnum">Creator 5 · medium</span>
+        <h3>Short-form &amp; social</h3>
+        <p>Posts, threads, hooks, and captions at volume - native to each platform and still sounding like a human.</p>
+        <span class="meta"><span class="pill light">Cadence social set</span></span>
+      </a>
+      <a class="course-card" href="courses/b6-visual-content.html" style="--diff:#FB923C">
+        <span class="cicon">🎨</span>
+        <span class="cnum">Creator 6 · hands-on</span>
+        <h3>Visual content</h3>
+        <p>Images, graphics, and covers with AI - brand-consistent, with the IP and rights cautions that keep you safe.</p>
+        <span class="meta"><span class="pill light">Cadence visuals</span></span>
+      </a>
+      <a class="course-card" href="courses/b7-video-audio.html" style="--diff:#FB923C">
+        <span class="cicon">🎬</span>
+        <span class="cnum">Creator 7 · hands-on</span>
+        <h3>Video &amp; audio</h3>
+        <p>Scripts, storyboards, and AI video and voice - the multimodal frontier, done with brand and rights in mind.</p>
+        <span class="meta"><span class="pill light">Cadence video kit</span></span>
+      </a>
+      <a class="course-card" href="courses/b8-content-pipeline.html" style="--diff:#FBBF24">
+        <span class="cicon">⚙️</span>
+        <span class="cnum">Creator 8 · medium</span>
+        <h3>The content pipeline &amp; workflow</h3>
+        <p>Brief to draft to edit to QA to publish - a repeatable pipeline and a content brand GPT that keeps it on-system.</p>
+        <span class="meta"><span class="pill light">Cadence pipeline</span></span>
+      </a>
+      <a class="course-card" href="courses/b9-quality-anti-slop.html" style="--diff:#FB923C">
+        <span class="cicon">✂️</span>
+        <span class="cnum">Creator 9 · hands-on</span>
+        <h3>Quality, editing &amp; the anti-slop pass</h3>
+        <p>The human edit that earns the reader - fact-check, cut the tells, and make it unmistakably yours.</p>
+        <span class="meta"><span class="pill light">The edit pass</span></span>
+      </a>
+      <a class="course-card" href="courses/b10-governance-ip-publishing.html" style="--diff:#F87171">
+        <span class="cicon">🔒</span>
+        <span class="cnum">Creator 10 · hardest</span>
+        <h3>Governance, IP &amp; publishing at scale</h3>
+        <p>Disclosure, IP clearance, provenance, and brand-safety - the publish checklist before content ships at volume.</p>
+        <span class="meta"><span class="pill light">Publish checklist</span></span>
+      </a>
+    </div>
+    <div class="diff-legend">
+      <span><i style="background:#34D399"></i>easy - everyone</span>
+      <span><i style="background:#FBBF24"></i>medium</span>
+      <span><i style="background:#FB923C"></i>hands-on / deciding</span>
+      <span><i style="background:#F87171"></i>hardest</span>
+    </div>
+
+    <div class="rail">
+      <b>The one rule this whole course runs on:</b> own your voice and your claims. AI drafts fast, but the human edit is non-negotiable - no fabricated facts or quotes, distinctiveness over volume, and clear disclosure and IP care. Content that reads as AI is content nobody remembers.
+    </div>
+
+    <div class="paths">
+      <h2>Choose your path 🗺️</h2>
+      <p class="plede">Two doors, one course. Content leaders run the operation; creators build the engine - and both refuse to ship slop.</p>
+      <div class="path"><b>🤝 Leader (no code, ever)</b>
+        <a class="pstep" href="courses/a1-ai-first-content.html">a1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a2-content-use-case-risk-map.html">a2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a3-brand-voice-anti-slop.html">a3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a4-ip-disclosure-governance.html">a4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a5-content-ops-roi.html">a5</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a6-content-strategy-future.html">a6</a>
+      </div>
+      <div class="path"><b>🛠️ Creator (build the engine)</b>
+        <a class="pstep" href="courses/b1-ai-foundations-creators.html">b1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b2-idea-and-brief.html">b2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b3-one-idea-many-formats.html">b3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b4-long-form-writing.html">b4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b5-short-form-social.html">b5</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b6-visual-content.html">b6</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b7-video-audio.html">b7</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b8-content-pipeline.html">b8</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b9-quality-anti-slop.html">b9</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b10-governance-ip-publishing.html">b10</a>
+      </div>
+      <div class="path"><b>🌱 Curious follower (a taste)</b>
+        <a class="pstep" href="courses/a1-ai-first-content.html">a1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a3-brand-voice-anti-slop.html">a3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b3-one-idea-many-formats.html">b3</a>
+      </div>
+      <div class="path"><b>🚀 Full journey (lead AND create)</b>
+        <a class="pstep" href="courses/a1-ai-first-content.html">a1-a6</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b1-ai-foundations-creators.html">b1-b10</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section mm-section">
+    <h2>The knowledge map 🧠</h2>
+    <p class="mm-lede">Both tracks at a glance - hover a session to spotlight its concepts, click any node to jump in.</p>
+    <div class="mm-wrap"><div id="mindmap"></div></div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>learn-ai-content-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a> · sources: Coursera Multimodal AI · AI Content Scaling · creative-automation 2026 + IP/FTC/provenance canon</span>
+  </footer>
+</main>
+
+<script>
+window.MINDMAP_DATA = {
+  title: "AI +\nContent",
+  centerColor: "#4C1D95",
+  sessions: [
+    { label: "AI-first\ncontent", href: "courses/a1-ai-first-content.html", color: "#34D399",
+      concepts: [
+        { label: "Volume vs quality", href: "courses/a1-ai-first-content.html" },
+        { label: "Where AI wins", href: "courses/a1-ai-first-content.html" } ] },
+    { label: "Use-case +\nrisk map", href: "courses/a2-content-use-case-risk-map.html", color: "#34D399",
+      concepts: [
+        { label: "Score the bets", href: "courses/a2-content-use-case-risk-map.html" },
+        { label: "Slop + IP risk", href: "courses/a2-content-use-case-risk-map.html" } ] },
+    { label: "Voice +\nanti-slop", href: "courses/a3-brand-voice-anti-slop.html", color: "#FBBF24",
+      concepts: [
+        { label: "Consistency at scale", href: "courses/a3-brand-voice-anti-slop.html" },
+        { label: "The human edit", href: "courses/a3-brand-voice-anti-slop.html" } ] },
+    { label: "IP +\ngovernance", href: "courses/a4-ip-disclosure-governance.html", color: "#FBBF24",
+      concepts: [
+        { label: "Copyright + likeness", href: "courses/a4-ip-disclosure-governance.html" },
+        { label: "Disclosure + provenance", href: "courses/a4-ip-disclosure-governance.html" } ] },
+    { label: "Content ops\n& ROI", href: "courses/a5-content-ops-roi.html", color: "#FB923C",
+      concepts: [
+        { label: "Pipeline + roles", href: "courses/a5-content-ops-roi.html" },
+        { label: "ROI not volume", href: "courses/a5-content-ops-roi.html" } ] },
+    { label: "Strategy +\nfuture", href: "courses/a6-content-strategy-future.html", color: "#FB923C",
+      concepts: [
+        { label: "Agentic pipelines", href: "courses/a6-content-strategy-future.html" },
+        { label: "The narrative", href: "courses/a6-content-strategy-future.html" } ] },
+    { label: "AI\nfoundations", href: "courses/b1-ai-foundations-creators.html", color: "#34D399",
+      concepts: [
+        { label: "Can vs can't", href: "courses/b1-ai-foundations-creators.html" },
+        { label: "Tool landscape", href: "courses/b1-ai-foundations-creators.html" },
+        { label: "The two rails", href: "courses/b1-ai-foundations-creators.html" } ] },
+    { label: "Idea +\nbrief", href: "courses/b2-idea-and-brief.html", color: "#34D399",
+      concepts: [
+        { label: "The core idea", href: "courses/b2-idea-and-brief.html" },
+        { label: "The brief", href: "courses/b2-idea-and-brief.html" } ] },
+    { label: "One idea,\nmany formats", href: "courses/b3-one-idea-many-formats.html", color: "#FBBF24",
+      concepts: [
+        { label: "Native repurposing", href: "courses/b3-one-idea-many-formats.html" },
+        { label: "Platform fit", href: "courses/b3-one-idea-many-formats.html" } ] },
+    { label: "Long-form\nwriting", href: "courses/b4-long-form-writing.html", color: "#FBBF24",
+      concepts: [
+        { label: "Articles + scripts", href: "courses/b4-long-form-writing.html" },
+        { label: "Anti-slop", href: "courses/b4-long-form-writing.html" } ] },
+    { label: "Short-form\n& social", href: "courses/b5-short-form-social.html", color: "#FBBF24",
+      concepts: [
+        { label: "Hooks + threads", href: "courses/b5-short-form-social.html" },
+        { label: "Native + human", href: "courses/b5-short-form-social.html" } ] },
+    { label: "Visual\ncontent", href: "courses/b6-visual-content.html", color: "#FB923C",
+      concepts: [
+        { label: "Images + covers", href: "courses/b6-visual-content.html" },
+        { label: "Brand + IP", href: "courses/b6-visual-content.html" } ] },
+    { label: "Video &\naudio", href: "courses/b7-video-audio.html", color: "#FB923C",
+      concepts: [
+        { label: "Scripts + storyboards", href: "courses/b7-video-audio.html" },
+        { label: "AI video + voice", href: "courses/b7-video-audio.html" } ] },
+    { label: "Content\npipeline", href: "courses/b8-content-pipeline.html", color: "#FBBF24",
+      concepts: [
+        { label: "Brief to publish", href: "courses/b8-content-pipeline.html" },
+        { label: "Content brand GPT", href: "courses/b8-content-pipeline.html" } ] },
+    { label: "Quality +\nanti-slop", href: "courses/b9-quality-anti-slop.html", color: "#FB923C",
+      concepts: [
+        { label: "The human edit", href: "courses/b9-quality-anti-slop.html" },
+        { label: "Distinctiveness", href: "courses/b9-quality-anti-slop.html" } ] },
+    { label: "Governance +\npublishing", href: "courses/b10-governance-ip-publishing.html", color: "#F87171",
+      concepts: [
+        { label: "Disclosure + provenance", href: "courses/b10-governance-ip-publishing.html" },
+        { label: "Publish checklist", href: "courses/b10-governance-ip-publishing.html" } ] }
+  ]
+};
+</script>
+<script src="assets/mindmap.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creator session 9 · Quality, editing &amp; the anti-slop pass - learn AI + content with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-content-with-phoebe</a> / Creator session 9 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Content with Phoebe · Creator track · Session 9 of 10</div>
+    <h1>Quality, editing &amp; the anti-slop pass: <span class="accent">where AI content earns the reader</span></h1>
+    <p class="sub">Eight sessions have made Cadence's content engine fast. This one makes it worth reading. The edit is not a polish step at the end - it is the whole point everything else has been pointing at. Tonight you build a repeatable anti-slop edit pass and a quality checklist you run on every piece, so speed turns into content people actually remember instead of more noise.</p>
+    <div class="chip-row">
+      <span class="chip level">🟠 Creator track</span>
+      <span class="chip audience">Practitioners: editors · creators · content</span>
+      <span class="chip audience">ChatGPT or Claude</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-2 · Why the edit</span>
+      <span class="a2" style="flex:4">2-20 · The edit, the bar, the fact-check</span>
+      <span class="a3" style="flex:5">20-43 · Build-along: your anti-slop pass + checklist</span>
+      <span class="a4" style="flex:1">43-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>The edit is where AI content becomes worth reading</h2>
+    </div>
+    <p class="lede">Every session so far - the idea, the repurposing, the long-form, the social, the visuals, the pipeline - hands you a fast draft. None of it earns the reader on its own. The draft is the average talking; the edit is where it becomes specific, true, and unmistakably yours. This session is the one the whole track has been aiming at: the human edit that separates content from slop. You will leave with a method you run every single time, not a vibe.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">★ Try it now prompt</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A repeatable five-step anti-slop edit pass you can run on any AI draft, a concrete quality checklist that separates ship from slop, and a fact-check habit that keeps an invented number from ever reaching publish. Two reusable artifacts, both yours to keep.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: THE ANTI-SLOP EDIT ============ -->
+  <section class="section" id="edit-pass">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · the human edit method</span>
+      <h2>The anti-slop edit, step by step <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">The edit is not one big rewrite; it is five specific moves in order. Cut the cliches and filler, add real specifics, sharpen the point of view, verify every fact and quote, then do a voice check. AI can assist - it will happily flag its own tells if you ask - but you make every call. The draft narrows from a generic 70% into something only you would publish.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The anti-slop edit funnel: a raw AI draft passes through cut slop, add specifics and point of view, fact-check, and voice check before it ships - the human owns each step">
+        <defs>
+          <marker id="b9xAh" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 Z" fill="#CFCADF"/>
+          </marker>
+        </defs>
+        <style>
+          .b9xT { font: 700 15px Inter, sans-serif; fill: #FFFFFF; }
+          .b9xTi { font: 700 15px Inter, sans-serif; fill: #1E1B2E; }
+          .b9xX { font: 400 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .b9xXi { font: 400 12.5px Inter, sans-serif; fill: #1F2D07; }
+          .b9xN { font: 600 14px Inter, sans-serif; fill: #1F2D07; }
+        </style>
+        <rect x="20" y="60" width="118" height="120" rx="12" fill="#4C1D95"/>
+        <text class="b9xT" x="79" y="112" text-anchor="middle">Raw draft</text>
+        <text class="b9xX" x="79" y="134" text-anchor="middle">the fast 70%</text>
+        <line x1="140" y1="120" x2="158" y2="120" stroke="#CFCADF" stroke-width="2" marker-end="url(#b9xAh)"/>
+        <rect x="160" y="70" width="118" height="100" rx="12" fill="#7C3AED"/>
+        <text class="b9xT" x="219" y="112" text-anchor="middle">Cut slop</text>
+        <text class="b9xX" x="219" y="134" text-anchor="middle">cliches + filler</text>
+        <line x1="280" y1="120" x2="298" y2="120" stroke="#CFCADF" stroke-width="2" marker-end="url(#b9xAh)"/>
+        <rect x="300" y="78" width="118" height="84" rx="12" fill="#A78BFA"/>
+        <text class="b9xT" x="359" y="112" text-anchor="middle">Add specifics</text>
+        <text class="b9xX" x="359" y="132" text-anchor="middle">+ real POV</text>
+        <line x1="420" y1="120" x2="438" y2="120" stroke="#CFCADF" stroke-width="2" marker-end="url(#b9xAh)"/>
+        <rect x="440" y="84" width="118" height="72" rx="12" fill="#7C3AED"/>
+        <text class="b9xT" x="499" y="112" text-anchor="middle">Fact-check</text>
+        <text class="b9xX" x="499" y="132" text-anchor="middle">verify claims</text>
+        <line x1="560" y1="120" x2="578" y2="120" stroke="#CFCADF" stroke-width="2" marker-end="url(#b9xAh)"/>
+        <rect x="580" y="90" width="118" height="60" rx="12" fill="#A78BFA"/>
+        <text class="b9xT" x="639" y="115" text-anchor="middle">Voice check</text>
+        <text class="b9xX" x="639" y="134" text-anchor="middle">sounds like you</text>
+        <line x1="700" y1="120" x2="718" y2="120" stroke="#CFCADF" stroke-width="2" marker-end="url(#b9xAh)"/>
+        <rect x="720" y="94" width="118" height="52" rx="12" fill="#EEFAD9" stroke="#65A30D" stroke-width="1.5"/>
+        <text class="b9xTi" x="779" y="116" text-anchor="middle">Ships</text>
+        <text class="b9xXi" x="779" y="134" text-anchor="middle">specific + true</text>
+        <rect x="20" y="284" width="14" height="14" rx="3" fill="#65A30D"/>
+        <text class="b9xN" x="44" y="296">Human owns each step - AI can flag the tells, but you make every call.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the anti-slop edit funnel: raw draft narrows into something only you would ship</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The five moves, in order<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Run them in sequence. Cutting first clears the fog so you can see what is actually missing; specifics and point of view come next because they are what the reader remembers; fact-check protects your credibility; voice check is the last gate before it ships. Each move is a decision only you can make.</p>
+        <ul>
+          <li><strong>Cut cliches + filler.</strong> Delete "in today's world", "game-changer", "unlock your potential", and every sentence that could open any article. If a line says nothing, it goes.</li>
+          <li><strong>Add real specifics.</strong> Replace a vague claim with a number, a name, a moment, a concrete example from your own work. Specificity is the opposite of slop.</li>
+          <li><strong>Sharpen the point of view.</strong> Say the thing only you would say. A draft that agrees with everyone is forgettable; a genuine take is the reason someone reads you.</li>
+          <li><strong>Verify every fact and quote.</strong> Check each stat, date, name, and quotation against a primary source. Anything unverified is marked and resolved, never published.</li>
+          <li><strong>Voice check.</strong> Read it aloud. Does it sound like you or like the model? Fix the rhythm and word choices until it is unmistakably yours.</li>
+        </ul>
+        <div class="prompt-box good"><span class="label">★ Try it now (any chat AI) - make it flag its own tells</span>Here is an AI draft: [paste]. Do not rewrite it. Just list, as bullets: every cliche or filler phrase to cut, every claim I must verify, and the two lines that sound most generically like AI. Be blunt. I will make the edits myself.</div>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The paragraph that flipped in four minutes.</strong> A creator ran a draft newsletter intro through the five moves: cut two cliches, swapped a vague "many teams" for the one client they actually worked with, added a single opinionated sentence, checked the one stat (it was wrong - fixed it), and read it aloud. Same length, completely different piece. The edit was the writing.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Why AI assists but never decides<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The model is a genuinely useful editing assistant - it can spot its own cliches, list unverifiable claims, and suggest where a piece goes generic. What it cannot do is decide. It does not know which specific from your life is the right one, which take is honestly yours, or whether a number is actually true. So use it to surface candidates and speed the mechanical parts, and keep every judgment call in human hands. Assistant on the tells, human on the calls.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: THE QUALITY BAR ============ -->
+  <section class="section" id="quality-bar">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · the standard that separates ship from slop</span>
+      <h2>The quality bar <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">"Good enough" is not a standard; it is how slop ships. You need a concrete bar you can point at, the same way every time. Five checks, each a yes/no, and the standard underneath all of them is distinctiveness: could this only have come from you? If not, it is not ready.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The five checks - each one a pass or fail<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <table class="clean">
+          <thead><tr><th>The check</th><th>Passes only if...</th></tr></thead>
+          <tbody>
+            <tr><td>A real specific per section</td><td>Every section has at least one concrete detail - a number, name, moment - not a generality</td></tr>
+            <tr><td>A genuine point of view</td><td>It says something you actually believe, not the safe consensus everyone would write</td></tr>
+            <tr><td>Every claim verified</td><td>Each stat, quote, date, and name is checked against a source; no unverified numbers</td></tr>
+            <tr><td>Sounds like you</td><td>Read aloud, the voice is yours - the rhythm and word choices are not the model's default</td></tr>
+            <tr><td>Earns the first line</td><td>The opening makes a reader want the second line - no throat-clearing, no "in today's world"</td></tr>
+          </tbody>
+        </table>
+        <div class="callout tip">
+          <strong>The standard under all five</strong>
+          Distinctiveness. The one question that catches slop: "Could only I have made this?" If the answer is no, it reads as AI content, and AI content that reads as AI fails. Distinctive beats fluent, every time.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Why "fluent" is the trap<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The dangerous thing about AI drafts is that they read fine. Grammatical, structured, confident - they pass a casual glance easily, which is exactly why unedited slop ships so often. Fluency used to be a proxy for effort and quality; now it is free, so it signals nothing. That is why the bar cannot be "is it well written". It has to be "is it distinctive and true", because those are the only signals the model cannot fake for you.</p>
+        <ul>
+          <li><strong>Fluent but empty passes the eye.</strong> Slop rarely looks broken - it looks fine and says nothing. The bar has to catch "fine and forgettable".</li>
+          <li><strong>Distinctiveness is the real gate.</strong> Specifics, a real take, and your voice are what a reader remembers and what the model cannot supply.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: FACT-CHECKING ============ -->
+  <section class="section" id="fact-check">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · the non-negotiable</span>
+      <h2>Fact-checking AI content <span class="tag concept">4 min live</span></h2>
+    </div>
+    <p class="lede">AI invents facts and quotes with total confidence. A plausible statistic, a real-sounding testimonial, a study that does not exist - all delivered in the same steady tone as the true things. Publish one and it is a credibility hit you do not get back. So the rule is absolute: verify against primary sources, never publish an unverified number, and mark anything you have not checked.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The verify-or-cut rule<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Treat every factual claim the model produces as unverified until you have seen the primary source yourself. Not a search summary, not "the AI said it came from" - the actual source. If you cannot verify it, you have two options: cut it, or replace it with something you can stand behind. There is no third option where you publish it and hope.</p>
+        <ul>
+          <li><strong>Mark it as you draft.</strong> Tag every unverified claim with <code>[verify]</code> inline so nothing slips through unnoticed.</li>
+          <li><strong>Resolve before publish.</strong> Every <code>[verify]</code> is checked against a primary source and either confirmed, corrected, or cut. A piece with a live <code>[verify]</code> does not ship.</li>
+          <li><strong>Quotes are facts too.</strong> A quotation the model produced is almost never real. Attribute only what you have traced to a genuine source.</li>
+        </ul>
+        <div class="prompt-box good"><span class="label">★ Try it now - surface the risky claims</span>Read this draft: [paste]. List every factual claim, statistic, quote, date, and named source in it as a checklist. Mark each one [verify]. Do not tell me whether they are true - I will check each against a primary source myself.</div>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The stat that was never real.</strong> A confident "73% of teams report..." made it into a near-final post. It sounded authoritative and fit the argument perfectly - which is exactly why it was dangerous. There was no study. Caught at the fact-check gate, it became "in our own work with a dozen teams", which was true, specific, and stronger. Unverified numbers do not get the benefit of the doubt.</p>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>Run the full anti-slop pass on a draft <span class="tag demo">★ 13 min · everyone builds</span></h2>
+    </div>
+    <p class="lede">Take a real AI draft - one of yours, or a Cadence piece from an earlier session - and run all five moves end to end. This is the session in one exercise: watch a generic draft become worth publishing, and time yourself so you feel how fast the edit actually is.</p>
+
+    <div class="steps">
+      <div class="step"><p>Pick a draft. Grab an AI draft you have, or generate a short Cadence piece (a post, a newsletter intro, a product paragraph). Keep the raw version so you can compare.</p></div>
+      <div class="step"><p>Cut. Read it once and delete every cliche, filler line, and sentence that could open any article. Be ruthless - if it says nothing, it goes.</p></div>
+      <div class="step"><p>Specify + sharpen. Replace one vague claim with a real specific from your own work, and add one sentence only you would write. This is where distinctiveness enters.</p></div>
+      <div class="step"><p>Fact-check. Tag every claim, stat, quote, and date with [verify]. Check each against a primary source. Confirm, correct, or cut - leave no [verify] live.</p></div>
+      <div class="step"><p>Voice check. Read it aloud. Fix anything that sounds like the model. Then compare against the raw draft and name the three moves that did the most work.</p></div>
+    </div>
+
+    <div class="prompt-box bad"><span class="label">The raw draft - generic slop (do not ship)</span>In today's fast-paced content landscape, quality matters more than ever. Studies show that 73% of audiences prefer authentic content. By leveraging AI thoughtfully, brands can unlock powerful results and take their content to the next level.</div>
+
+    <div class="prompt-box good"><span class="label">★ The assist prompt (you still make every call)</span>Here is a draft: [paste]. Help me run an anti-slop edit. In four short lists:
+1) Cliches and filler to cut.
+2) Vague claims where I should add a real specific.
+3) Every fact, stat, quote, and date to mark [verify].
+4) The two lines that sound most like generic AI.
+Do not rewrite it. I will make each edit and check each fact myself.</div>
+
+    <div class="callout tip">
+      <strong>Time it</strong>
+      Most drafts move from slop to ship in five to ten minutes with the pass. That speed is the point: the edit is not the slow part of using AI, it is the part that makes the speed worth anything.
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>Build your reusable quality checklist <span class="tag demo">★ 8 min · build your own</span></h2>
+    </div>
+    <p class="lede">Turn tonight's method into a gate you run every time. A short ship/slop checklist you keep next to your editor, so quality is a habit and not a mood. You draft it with AI, then edit it - the pass applied to itself.</p>
+
+    <div class="steps">
+      <div class="step"><p>Start from the five moves and the five quality checks. Ask AI to draft a one-page checklist with a clear "ship" line: every box must be yes before it publishes.</p></div>
+      <div class="step"><p>Make it yours. Add your formats and channels, your recurring cliches (everyone has a few), and the [verify] rule for facts. Cut anything you would not actually run.</p></div>
+      <div class="step"><p>Add the distinctiveness question at the top as the master gate: "Could only I have made this?" If a piece fails that one, the rest does not matter.</p></div>
+      <div class="step"><p>Save it where you write and run it on your next real piece. This is the gate you carry into b10, where it becomes part of Cadence's publish-readiness controls.</p></div>
+    </div>
+
+    <div class="prompt-box good"><span class="label">★ The quality-checklist prompt</span>Draft a one-page "ship or slop" quality checklist I run on every piece before publishing.
+Context: I make [formats/channels].
+
+Build it from:
+- The edit pass: cut cliches + filler, add real specifics, sharpen the POV, verify every
+  fact and quote, voice check.
+- The quality bar (each a yes/no): a real specific per section, a genuine POV, every claim
+  verified, sounds like me, earns the first line.
+Put one master question at the top: "Could only I have made this?"
+Format: short checklist, plain language, one page. I will edit it to fit my work.</div>
+
+    <div class="callout win">
+      <strong>You now have both artifacts</strong>
+      A five-move anti-slop pass and a ship/slop checklist. Run the pass on the draft, run the checklist as the gate. Together they are the difference between publishing content and publishing noise - and they carry straight into the governance controls in b10.
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 30-45 min total</span></h2>
+    </div>
+    <ul>
+      <li>Run the full five-move pass on three real drafts this week. Notice which move you skip when you rush - that is the one to make a hard habit.</li>
+      <li>Finalise your ship/slop checklist and pin it next to where you write. Run it on every piece for a week, no exceptions.</li>
+      <li>Fact-check one piece properly: mark every claim [verify] and trace each to a primary source. Note how many did not hold up.</li>
+      <li>Keep a running list of your own recurring cliches - the phrases you and the model both reach for. Add them to your "cut on sight" list.</li>
+      <li>Optional: take a piece you published before this session and run the pass on it. The gap you find is the value the edit adds.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Taught from the widely taught content-craft canon on editing and distinctiveness, plus anti-slop practice. Certificates and paid tooling stay official. This session covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Content-craft canon - editing &amp; distinctiveness</span><span class="note">Part 1-2 · the human edit, the quality bar, distinctiveness as the standard</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Anti-slop practice</span><span class="note">Part 1 + demos · draft fast, edit to specific-true-yours</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Fact-checking / verification practice</span><span class="note">Part 3 · verify against primary sources, never publish an unverified number</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Quality-at-scale + governance canon</span><span class="note">Demo 2 · the checklist as a gate, carried into b10</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · What are the five moves of the anti-slop edit pass, in order?</p>
+      <button class="qopt" type="button">A · Generate, expand, format, schedule, publish</button>
+      <button class="qopt" type="button">B · Cut cliches + filler, add specifics, sharpen the POV, verify facts, voice check</button>
+      <button class="qopt" type="button">C · Spell-check, grammar-check, tone-check, length-check, done</button>
+      <p class="qwhy">Cut first to clear the fog, add specifics and point of view for what the reader remembers, verify to protect credibility, then a voice check as the last gate. AI assists on each; you decide.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">2 · What is the single standard under the whole quality bar?</p>
+      <button class="qopt" type="button">A · Fluency - is it well written and grammatical</button>
+      <button class="qopt" type="button">B · Length - is it long enough to look thorough</button>
+      <button class="qopt" type="button">C · Distinctiveness - could only I have made this? Fluent is free; distinctive is the signal</button>
+      <p class="qwhy">Fluency is now free, so it signals nothing. The gate is "could only I have made this?" - specifics, a real take, and your voice, the things the model cannot supply.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · The AI produced a confident "73% of teams report..." statistic. What do you do?</p>
+      <button class="qopt" type="button">A · Mark it [verify], check it against a primary source, and confirm, correct, or cut - never publish it unverified</button>
+      <button class="qopt" type="button">B · Publish it - the model is usually right and it fits the argument</button>
+      <button class="qopt" type="button">C · Soften it to "most teams" so it is safer to publish</button>
+      <p class="qwhy">AI invents confident facts and quotes. Verify against a primary source, never publish an unverified number, and resolve every [verify] before it ships. One fake stat is a credibility hit you do not get back.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Creator session 9 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The edit is the point</b><span>every session hands you a fast draft; the edit is where it becomes worth reading. Not a polish step - the job.</span></div>
+      <div class="cheat-item"><b>The five moves</b><span>cut cliches + filler → add real specifics → sharpen the POV → verify facts + quotes → voice check.</span></div>
+      <div class="cheat-item"><b>AI assists, you decide</b><span>the model flags its own tells and lists unverified claims; every judgment call stays human.</span></div>
+      <div class="cheat-item"><b>The quality bar</b><span>a real specific per section, a genuine POV, every claim verified, sounds like you, earns the first line.</span></div>
+      <div class="cheat-item"><b>Distinctiveness</b><span>the master gate: "could only I have made this?" Fluent is free now; distinctive is the signal.</span></div>
+      <div class="cheat-item"><b>Fact-check</b><span>AI invents confident facts + quotes. Verify against primary sources; mark [verify]; never publish an unverified number.</span></div>
+      <div class="cheat-item"><b>Speed of the pass</b><span>slop → ship in 5-10 minutes. The edit is not the slow part; it is what makes the speed worth anything.</span></div>
+      <div class="cheat-item"><b>Two artifacts</b><span>your five-move anti-slop pass + your ship/slop checklist. Run the pass, run the gate - carried into b10.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Creator session 9 of 10 · learn-ai-content-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b8-content-pipeline.html">← Previous: The content pipeline &amp; workflow</a> &nbsp;·&nbsp; <a href="b10-governance-ip-publishing.html">Next: Governance, IP &amp; publishing at scale →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

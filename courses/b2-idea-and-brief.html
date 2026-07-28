@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creator session 2 · The idea + the brief - learn AI + content with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-content-with-phoebe</a> / Creator session 2 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Content with Phoebe · Creator track · Session 2 of 10</div>
+    <h1>The idea + the brief: <span class="accent">the part AI cannot do for you</span></h1>
+    <p class="sub">Everyone can generate a draft now, so the draft is no longer where you win - the idea is. Tonight you learn the difference between a topic and an idea worth telling, how to mine your own notes for ideas with a real point of view, and how to capture it all in a one-page content brief. AI drafts the brief; you own the insight and the proof. Walk out with a sharp idea and a brief for Cadence you will reuse in every later session.</p>
+    <div class="chip-row">
+      <span class="chip level">🟢 Creator track</span>
+      <span class="chip audience">Practitioners: creators · writers · strategists</span>
+      <span class="chip audience">ChatGPT or Claude · no code</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-21 · Idea, brief, mining</span>
+      <span class="a3" style="flex:5">21-42 · Build-along: idea + brief</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where content really starts</h2>
+    </div>
+    <p class="lede">In b1 you saw the tool and the two rails. Tonight is the source of everything that follows: the idea. A weak idea drafted beautifully is still a weak piece - polished slop. A strong idea drafted roughly is worth editing into something great. So before you touch a draft, you get two things sharp: the <strong>core idea</strong> (an insight only you would land) and the <strong>content brief</strong> (the one page that turns that idea into content only you could make). Everything you build for Cadence from here starts here.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">★ Try it now prompt</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A core idea sharpened to one sentence - an insight, not a topic - and a one-page content brief for Cadence: idea, audience, angle, proof, format, voice, constraints. This brief is not throwaway: it feeds the b3 repurposing simulator and every later session builds on it.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: THE IDEA WORTH SCALING ============ -->
+  <section class="section" id="the-idea">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · the difference between a topic and an idea</span>
+      <h2>The idea worth scaling <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">Here is the trap: people bring AI a <em>topic</em> - "productivity", "onboarding", "our new feature" - and the model happily returns the average take on it, same as it would for anyone. A topic is a subject. An idea is a subject plus a claim: an insight, a point of view, or a tension you actually believe. AI is brilliant at generating and pressure-testing idea candidates, but the insight at the centre has to be yours. That is the one thing on this whole course the model genuinely cannot supply.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Idea anatomy: a topic becomes an angle, then an insight or point of view, then the idea worth telling - the insight is the human part">
+        <defs>
+          <marker id="b2xAh" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 Z" fill="#CFCADF"/>
+          </marker>
+        </defs>
+        <style>
+          .b2xT { font: 700 15px Inter, sans-serif; fill: #FFFFFF; }
+          .b2xI { font: 700 15px Inter, sans-serif; fill: #1E1B2E; }
+          .b2xX { font: 400 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .b2xXi { font: 400 12.5px Inter, sans-serif; fill: #1F2D07; }
+          .b2xN { font: 600 14px Inter, sans-serif; fill: #1F2D07; }
+        </style>
+        <rect x="24" y="52" width="185" height="96" rx="12" fill="#DDD6FE"/>
+        <text class="b2xI" x="44" y="90">Topic</text>
+        <text class="b2xXi" x="44" y="112" fill="#6B6786">the subject:</text>
+        <text class="b2xXi" x="44" y="130" fill="#6B6786">"onboarding"</text>
+        <line x1="209" y1="100" x2="243" y2="100" stroke="#CFCADF" stroke-width="2" marker-end="url(#b2xAh)"/>
+        <rect x="247" y="52" width="185" height="96" rx="12" fill="#A78BFA"/>
+        <text class="b2xT" x="267" y="90">Angle</text>
+        <text class="b2xX" x="267" y="112">a way in:</text>
+        <text class="b2xX" x="267" y="130">"the first 5 min"</text>
+        <line x1="432" y1="100" x2="466" y2="100" stroke="#CFCADF" stroke-width="2" marker-end="url(#b2xAh)"/>
+        <rect x="470" y="52" width="185" height="96" rx="12" fill="#7C3AED"/>
+        <text class="b2xT" x="490" y="86">Insight / POV</text>
+        <text class="b2xX" x="490" y="108">a claim you</text>
+        <text class="b2xX" x="490" y="126">actually believe</text>
+        <line x1="655" y1="100" x2="689" y2="100" stroke="#CFCADF" stroke-width="2" marker-end="url(#b2xAh)"/>
+        <rect x="693" y="52" width="185" height="96" rx="12" fill="#4C1D95"/>
+        <text class="b2xT" x="713" y="86">The idea</text>
+        <text class="b2xX" x="713" y="108">worth telling -</text>
+        <text class="b2xX" x="713" y="126">yours, specific</text>
+        <rect x="24" y="252" width="14" height="14" rx="3" fill="#65A30D"/>
+        <text class="b2xN" x="48" y="264">AI can walk topic to angle. The insight at the centre is the part only you can supply.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - from topic to the idea worth telling: the insight is the human step</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Topic vs idea - the test that saves you from slop<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The quickest way to tell them apart: a topic can be argued by anyone, an idea has a point of view that someone could disagree with. "Content marketing" is a topic. "Most content teams are drowning because they optimised for volume, not memory" is an idea - it makes a claim, and it could be wrong. That edge is exactly what makes it worth reading. If your line could sit on any brand's blog unchanged, it is a topic, and the model will draft it into perfect, forgettable slop.</p>
+        <ul>
+          <li><strong>A topic is safe; an idea takes a side.</strong> If nobody could disagree, nobody will remember it.</li>
+          <li><strong>The insight is yours.</strong> AI can list twenty angles on a topic, but it cannot tell you which one you actually believe from experience.</li>
+          <li><strong>One real idea beats ten topics.</strong> Distinctiveness beats volume - the b1 rail, applied at the source.</li>
+        </ul>
+        <div class="prompt-box good"><span class="label">★ Try it now (any chat AI) - topic vs idea</span>Take the topic "remote work". Give me 5 versions as a plain topic line, then 5 versions rewritten as an idea that takes a clear point of view someone could disagree with. Then tell me what makes the second set riskier - and more memorable.</div>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The post that finally landed.</strong> A creator published "5 tips for better meetings" to silence for months. Then she wrote one line she actually believed - "most meetings are a failure of writing, not talking" - and built a single piece around it. It took a side, so people argued in the comments, quoted it, and shared it. Same topic. The difference was an idea.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Three shapes of a strong idea<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A strong idea usually takes one of three shapes. Any of them beats a bare topic.</p>
+        <ul>
+          <li><strong>An insight</strong> - something true that is not obvious: "onboarding fails in the first five minutes, not the first week".</li>
+          <li><strong>A point of view</strong> - a stance you will defend: "we should ship fewer posts and edit them harder".</li>
+          <li><strong>A tension</strong> - two true things that pull against each other: "AI makes content faster and makes it forgettable".</li>
+        </ul>
+        <p>When you mine ideas later, you are hunting for one of these. If your candidate is none of them, it is still a topic - keep digging.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: THE CONTENT BRIEF ============ -->
+  <section class="section" id="the-brief">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · the one page that turns an idea into content only you could make</span>
+      <h2>The content brief <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">An idea in your head is fragile - it drifts into the average the moment you start drafting. The brief is what pins it down. It is a short, plain document that captures the idea, who it is for, the angle, the proof, the format, the voice, and the constraints. Get these seven right and any draft that follows is already halfway to yours. AI can draft the brief in seconds from your notes, but the two rows it cannot fill for you are the insight and the proof - those are yours.</p>
+
+    <table class="clean">
+      <thead><tr><th>Brief element</th><th>What goes in it</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Idea</strong></td><td>The insight or point of view in one sentence - the claim someone could disagree with. <em>Yours.</em></td></tr>
+        <tr><td><strong>Audience</strong></td><td>Who specifically this is for, and what they already believe or struggle with.</td></tr>
+        <tr><td><strong>Angle</strong></td><td>The way in - the hook or frame that makes the idea land for this audience.</td></tr>
+        <tr><td><strong>Proof / specifics</strong></td><td>The real examples, numbers, or stories that make it credible and unmistakably yours. <em>Yours.</em></td></tr>
+        <tr><td><strong>Format</strong></td><td>Article, post, thread, newsletter, script - and roughly how long.</td></tr>
+        <tr><td><strong>Voice</strong></td><td>How it should sound - two or three adjectives, plus a sample of your writing to match.</td></tr>
+        <tr><td><strong>Constraints</strong></td><td>What to avoid, what is confidential, disclosure or rights notes, the deadline.</td></tr>
+      </tbody>
+    </table>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Why the brief is the anti-slop move<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Slop happens when you hand the model a thin prompt and let it fill the gaps with the average. The brief closes those gaps before drafting starts. When the idea is a real claim, the audience is specific, and the proof is your own, the model has nowhere to be generic - you have already made every decision that matters. The draft becomes execution, not invention. This is the same "the edit is the value" habit from b1, moved one step earlier: decide the substance up front, so editing is polishing, not rescuing.</p>
+        <div class="callout tip">
+          <strong>The two rows only you can fill</strong>
+          Let AI draft audience, angle, format, and voice from your notes. But the <em>idea</em> (the insight) and the <em>proof</em> (your real specifics) are yours - if you outsource those, you have written a brief for slop.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Cadence's brief - a worked example<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Cadence is the sample product whose content engine this track builds. A filled brief might read:</p>
+        <ul>
+          <li><strong>Idea:</strong> teams adopt Cadence and then quietly go back to spreadsheets - because the problem was never the tool, it was the ritual around it.</li>
+          <li><strong>Audience:</strong> ops leads who bought a tool that their team stopped using by month three.</li>
+          <li><strong>Angle:</strong> "the tool was never the problem" - name the uncomfortable pattern out loud.</li>
+          <li><strong>Proof:</strong> the real drop-off curve from month one to month three; one customer's actual "we went back to Sheets" quote (with permission).</li>
+          <li><strong>Format:</strong> a 700-word article, plus a short post to tease it.</li>
+          <li><strong>Voice:</strong> plain, warm, a little contrarian - like a smart colleague, not a brand.</li>
+          <li><strong>Constraints:</strong> no invented stats; anonymise the customer; disclose nothing confidential.</li>
+        </ul>
+        <p>Notice the idea takes a side and the proof is specific and real. That is a brief the model cannot slop up.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: MINING IDEAS WITH AI ============ -->
+  <section class="section" id="mining">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · use AI to expand, then you pick the one with a real point of view</span>
+      <h2>Mining ideas with AI - without the slop <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">Here is the move that keeps AI on the right side of the slop line: never ask it for ideas from nothing. Feed it <em>your</em> raw material - your notes, your half-formed opinions, the thing a customer said last week, the pattern you keep noticing - and ask it to expand that into idea candidates. It becomes a thinking partner that multiplies what is already yours, instead of a slop machine returning the internet's average take. Then you do the one thing it cannot: pick the candidate with a genuine insight.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Expand your material, then you choose<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The difference between generic-topic slop and real ideas is the input. "Give me content ideas about productivity" gets you the average of everyone. "Here are my messy notes from three client calls - find the tensions and non-obvious patterns, and turn each into an idea that takes a point of view" gets you candidates rooted in something real. The model widens; you decide. Reject anything that could have been written about any company - keep only what carries your fingerprint.</p>
+        <ul>
+          <li><strong>Bring raw material, not a blank topic.</strong> Notes, transcripts, opinions, a screenshot of a customer message - the more specific, the less generic the output.</li>
+          <li><strong>Ask for tensions and non-obvious patterns,</strong> not "10 ideas". You want the shapes from Part 1: insight, point of view, tension.</li>
+          <li><strong>You pick, and you say why.</strong> The candidate you choose should be one you could defend from experience. If none qualify, feed it more of your material.</li>
+        </ul>
+        <div class="prompt-box good"><span class="label">★ Try it now (any chat AI) - mine, do not invent</span>Here are my raw notes: [paste 5-10 messy lines - things you have noticed, said, or heard]. Do not add facts. Find the tensions and non-obvious patterns in what I already believe, and turn each into a candidate idea that takes a clear point of view. Give me 6, then tell me which 2 are riskiest - those are usually the memorable ones.</div>
+        <div class="callout win">
+          <strong>The slop test for an idea</strong>
+          Before you commit: could this exact idea appear on a competitor's blog, unchanged? If yes, it is a topic - keep mining. If it could only come from you, you have your idea.
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>Mine your ideas, pick the one with a POV <span class="tag demo">★ 13 min · everyone builds</span></h2>
+    </div>
+    <p class="lede">Turn your own experience into idea candidates with AI, then do the human part: pick the one with a genuine insight and sharpen it to a single sentence. This sentence becomes the top line of your Cadence brief.</p>
+
+    <div class="steps">
+      <div class="step"><p>Brain-dump 5-10 messy lines from your own world - things you have noticed, opinions you hold, a customer quote, a pattern that annoys you. Do not tidy them.</p></div>
+      <div class="step"><p>Paste them into ChatGPT or Claude with the mining prompt below. Ask for candidate ideas that take a point of view, plus which are the riskiest.</p></div>
+      <div class="step"><p>Read the candidates critically. Reject every one that could appear on a competitor's blog unchanged. Circle the one you could defend from experience.</p></div>
+      <div class="step"><p>Sharpen it to one sentence with a claim someone could disagree with. Cut hedging ("can", "might", "some"). Make it a line you would put your name on.</p></div>
+      <div class="step"><p>Run the slop test: could only you have written this? If yes, you have your core idea. Keep it open - Demo 2 wraps a brief around it.</p></div>
+    </div>
+
+    <div class="prompt-box bad"><span class="label">The lazy prompt - invites slop (do not use)</span>Give me 10 content ideas about productivity for a SaaS company.</div>
+
+    <div class="prompt-box good"><span class="label">★ The mining prompt (bring your own material)</span>Here are my raw notes: [paste 5-10 messy lines].
+Do not add facts, stats, or examples of your own.
+1) Find the tensions and non-obvious patterns in what I already wrote.
+2) Turn each into a candidate idea that takes a clear point of view - a claim
+   someone could disagree with, not a neutral topic.
+3) Give me 6 candidates, then flag the 2 riskiest.
+I will pick the one I can defend and sharpen it myself.</div>
+
+    <div class="callout tip">
+      <strong>Why you sharpen it by hand</strong>
+      The model can list candidates, but the final one-sentence idea is a judgment call about what you believe - that is the insight the whole brief hangs on, and it has to be yours.
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>Write Cadence's content brief <span class="tag demo">★ 8 min · build your own</span></h2>
+    </div>
+    <p class="lede">Wrap your sharpened idea in a full brief for Cadence - idea, audience, angle, proof, format, voice, constraints. AI drafts the scaffolding from your idea; you fill and own the insight and the proof. Keep this file: b3 feeds it straight into the repurposing simulator.</p>
+
+    <div class="steps">
+      <div class="step"><p>Give the AI your one-sentence idea from Demo 1, plus a couple of lines about Cadence and who you are writing for.</p></div>
+      <div class="step"><p>Ask it to draft the seven-part brief. Let it propose audience, angle, format, and voice - it is good at these from your idea.</p></div>
+      <div class="step"><p>Now take the pen. Replace the idea row with your exact sentence, and fill the proof row with real specifics only you have - a number, a quote, a story. No invented facts.</p></div>
+      <div class="step"><p>Tighten the constraints: what to avoid, what is confidential, any disclosure or rights notes, the deadline. This is where the b1 rails live in the brief.</p></div>
+      <div class="step"><p>Save it as your Cadence brief. You will hand this same brief to the b3 simulator and build long-form, social, and visual from it in later sessions.</p></div>
+    </div>
+
+    <div class="prompt-box good"><span class="label">★ The brief-drafting prompt</span>Draft a one-page content brief around this idea: [paste your one-sentence idea].
+Product context: Cadence, [one line on what it is]. Writing for: [audience].
+
+Structure it as seven short rows:
+Idea · Audience · Angle · Proof/specifics · Format · Voice · Constraints.
+
+Rules: propose Audience, Angle, Format, and Voice from my idea.
+Leave Idea exactly as I wrote it. For Proof, write [I fill this] - do not invent
+facts, stats, quotes, or examples. Keep it plain and one page.</div>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The brief that outlived the draft.</strong> A content lead started writing every piece from a one-page brief instead of a blank page. The first draft got faster, but the real win came later: when she repurposed the piece into a thread, a newsletter, and a talk, the brief kept all of them on the same idea and proof. One sharp brief powered a month of aligned content. That is exactly what b3 does with yours.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 30-45 min total</span></h2>
+    </div>
+    <ul>
+      <li>Finish both demos if you did not complete them live - especially the sharpened one-sentence idea. That line is the seed of everything in b3-b10.</li>
+      <li>Run the mining prompt on a second batch of your own notes. Keep the two idea candidates you would actually defend.</li>
+      <li>Finalise your Cadence content brief - all seven rows, with real proof in the proof row. Save the file; b3 needs it.</li>
+      <li>Take one old topic you have written before and rewrite it as an idea that takes a side. Notice how much sharper the brief becomes.</li>
+      <li>Optional: run the slop test on three ideas in your backlog. Cut anything a competitor could publish unchanged.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Taught from the content-craft canon and 2026 AI content practice. Certificates and paid tooling stay official. This session covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Content-craft canon - the brief, the core idea, distinctiveness</span><span class="note">Part 1-2 · idea vs topic; the seven-part brief</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Anti-slop practice - mining from your own material</span><span class="note">Part 3 + demos · expand your notes, you pick the POV</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Udemy - 2026 AI content scaling / workflow</span><span class="note">Part 2 · the brief as the scalable starting point</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Own-your-voice + rights rails</span><span class="note">Demos · you own the insight + proof, sourced in the course map</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · What separates an idea from a topic?</p>
+      <button class="qopt" type="button">A · An idea is longer and more detailed</button>
+      <button class="qopt" type="button">B · An idea uses better keywords</button>
+      <button class="qopt" type="button">C · An idea makes a claim - an insight or point of view someone could disagree with; a topic is just a subject</button>
+      <p class="qwhy">A topic is safe and could sit on any brand's blog. An idea takes a side, so it is memorable - and only you can supply the insight at its centre.</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">2 · What does a content brief contain?</p>
+      <button class="qopt" type="button">A · Just the topic and a deadline</button>
+      <button class="qopt" type="button">B · Idea, audience, angle, proof, format, voice, and constraints - on one page</button>
+      <button class="qopt" type="button">C · The full finished draft</button>
+      <p class="qwhy">The brief pins the idea down before drafting so the model has nowhere to be generic. Get the seven elements right and the draft is already halfway yours.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · When mining ideas with AI, what stays human?</p>
+      <button class="qopt" type="button">A · The insight and the proof - AI expands your material, but you pick the idea with a real POV and supply the real specifics</button>
+      <button class="qopt" type="button">B · Nothing - let the model choose the best idea</button>
+      <button class="qopt" type="button">C · Only the formatting</button>
+      <p class="qwhy">Feed AI your own notes and let it expand them into candidates, but the insight you commit to and the real proof are yours. Outsource those and you have briefed slop.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Creator session 2 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Topic vs idea</b><span>a topic is a subject anyone can write; an idea makes a claim someone could disagree with. The insight is yours.</span></div>
+      <div class="cheat-item"><b>Three shapes of an idea</b><span>an insight (non-obvious truth), a point of view (a stance), or a tension (two true things pulling apart).</span></div>
+      <div class="cheat-item"><b>The slop test</b><span>could a competitor publish this idea unchanged? If yes, it is a topic - keep mining.</span></div>
+      <div class="cheat-item"><b>The brief = 7 rows</b><span>idea · audience · angle · proof · format · voice · constraints. One page, plain language.</span></div>
+      <div class="cheat-item"><b>The two rows you own</b><span>the idea (insight) and the proof (real specifics). AI can draft the rest from your notes.</span></div>
+      <div class="cheat-item"><b>Mine, do not invent</b><span>feed AI your raw notes; ask for tensions + patterns; you pick the candidate with a real POV.</span></div>
+      <div class="cheat-item"><b>Why the brief is anti-slop</b><span>decide the substance up front so the draft is execution, not invention - editing polishes, not rescues.</span></div>
+      <div class="cheat-item"><b>Keep the brief</b><span>your Cadence brief feeds the b3 repurposing simulator and every later session builds on it.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Creator session 2 of 10 · learn-ai-content-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b1-ai-foundations-creators.html">← Previous: AI foundations for content creators</a> &nbsp;·&nbsp; <a href="b3-one-idea-many-formats.html">Next: One idea, many formats →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

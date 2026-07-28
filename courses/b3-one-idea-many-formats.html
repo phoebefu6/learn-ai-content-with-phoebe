@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creator session 3 · One idea, many formats - learn AI + content with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+<style>
+  /* ---- content-live simulator (scoped cl-*) ---- */
+  .cl-shell { display: grid; grid-template-columns: 15.5rem 1fr; gap: 1rem; border: 1px solid var(--hairline); border-radius: var(--radius); background: linear-gradient(180deg,#fff,#EFEBFB); padding: 1rem; margin: 1.2rem 0 .4rem; }
+  @media (max-width: 720px) { .cl-shell { grid-template-columns: 1fr; } }
+  .cl-ctitle { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; color: var(--indigo); margin-bottom: .5rem; }
+  .cl-idea { font-size: .8rem; color: var(--muted); line-height: 1.5; margin-bottom: .7rem; }
+  .cl-idea b { color: var(--ink); }
+  .cl-levers { display: flex; flex-direction: column; gap: .5rem; }
+  .cl-lever { display: flex; align-items: center; gap: .6rem; text-align: left; border: 1px solid var(--hairline); background: #fff; border-radius: 12px; padding: .55rem .7rem; cursor: pointer; transition: all .14s ease; font: inherit; color: var(--ink); }
+  .cl-lever:hover { border-color: var(--indigo-soft); }
+  .cl-lever.cl-active { border-color: var(--indigo); background: var(--indigo-50); }
+  .cl-sw { flex: none; width: 2rem; height: 1.15rem; border-radius: 999px; background: var(--faint); position: relative; transition: background .14s ease; }
+  .cl-sw::after { content: ""; position: absolute; top: 2px; left: 2px; width: calc(1.15rem - 4px); height: calc(1.15rem - 4px); border-radius: 50%; background: #fff; transition: transform .14s ease; box-shadow: 0 1px 2px rgba(30,27,46,.3); }
+  .cl-lever.cl-active .cl-sw { background: var(--indigo); }
+  .cl-lever.cl-active .cl-sw::after { transform: translateX(.85rem); }
+  .cl-ltext { display: flex; flex-direction: column; line-height: 1.25; }
+  .cl-ltext b { font-size: .84rem; font-weight: 700; }
+  .cl-ltext span { font-size: .72rem; color: var(--muted); }
+  .cl-modes { display: flex; gap: .4rem; margin-top: .9rem; }
+  .cl-mode { flex: 1; border: 1px solid var(--hairline); background: #fff; border-radius: 999px; padding: .38rem .5rem; font-size: .74rem; font-weight: 700; cursor: pointer; color: var(--muted); transition: all .14s ease; }
+  .cl-mode.cl-on { background: var(--indigo); color: #fff; border-color: var(--indigo); }
+  .cl-stage { min-width: 0; }
+  .cl-meters { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: .8rem; }
+  .cl-meter { flex: 1; min-width: 9rem; border: 1px solid var(--hairline); border-radius: 12px; background: #fff; padding: .6rem .8rem; }
+  .cl-mlabel { display: block; font-size: .68rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 700; color: var(--muted); }
+  .cl-mval { font-size: 1.7rem; font-weight: 800; font-variant-numeric: tabular-nums; line-height: 1.2; color: var(--ink); }
+  .cl-mval.cl-good { color: var(--indigo); }
+  .cl-bar { height: 7px; border-radius: 999px; background: var(--hairline); margin-top: .35rem; overflow: hidden; }
+  .cl-bar i { display: block; height: 100%; background: linear-gradient(90deg,var(--indigo-mid),var(--indigo)); transition: width .3s ease; }
+  .cl-draftlabel, .cl-scorehead { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--indigo); margin-bottom: .4rem; }
+  .cl-scorehead { text-transform: none; font-size: .95rem; letter-spacing: 0; color: var(--ink); }
+  .cl-card { border: 1px solid var(--hairline); border-left: 3px solid var(--indigo); border-radius: 10px; background: #fff; padding: .6rem .8rem; margin-bottom: .5rem; }
+  .cl-card.cl-generic { border-left-color: var(--amber); background: var(--amber-50); }
+  .cl-card:last-child { margin-bottom: 0; }
+  .cl-plat { display: flex; align-items: center; gap: .5rem; font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--indigo); margin-bottom: .3rem; }
+  .cl-generic .cl-plat { color: var(--amber-ink); }
+  .cl-badge { font-size: .6rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; background: var(--indigo-50); color: var(--indigo); border-radius: 5px; padding: .08rem .4rem; }
+  .cl-badge.cl-bad { background: #fff; color: var(--amber-ink); border: 1px solid var(--amber); }
+  .cl-card p { font-size: .86rem; margin: 0; line-height: 1.55; }
+  .cl-table { width: 100%; border-collapse: collapse; margin: .3rem 0 .5rem; font-size: .86rem; }
+  .cl-table th { text-align: left; text-transform: uppercase; font-size: .66rem; letter-spacing: .07em; color: var(--muted); padding: .35rem .5rem; border-bottom: 1px solid var(--hairline); }
+  .cl-table td { padding: .4rem .5rem; border-bottom: .5px solid var(--hairline); }
+  .cl-rmark { font-weight: 800; text-align: center; }
+  .cl-r-ok .cl-rmark { color: var(--indigo); }
+  .cl-r-no .cl-rmark { color: var(--faint); }
+  .cl-note, .cl-rail { font-size: .78rem; color: var(--muted); line-height: 1.55; }
+  .cl-rail { margin-top: .8rem; border-top: 1px dashed var(--hairline); padding-top: .6rem; font-style: italic; }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-content-with-phoebe</a> / Creator session 3 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Content with Phoebe · Creator track · Session 3 of 10</div>
+    <h1>One idea, many formats: <span class="accent">repurpose, don't copy-paste</span></h1>
+    <p class="sub">The single highest-leverage move in AI content is turning one strong idea into many platform-native pieces. Done well it multiplies your reach; done lazily it just pastes the same post everywhere and reaches no one. This session gives you the repurposing method, then a live simulator where you watch one idea become native to four platforms as you tailor it.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Creator track</span>
+      <span class="chip audience">Practitioners: creators · social · content teams</span>
+      <span class="chip audience">ChatGPT or Claude</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-17 · The repurpose engine</span>
+      <span class="a3" style="flex:5">17-42 · Simulator + build-along</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Repurposing is the engine, not a shortcut</h2>
+    </div>
+    <p class="lede">A content engine does not make ten unrelated things a week; it takes one idea worth telling and expresses it natively everywhere the audience is. AI makes that nearly free - one brief can yield a LinkedIn post, an X thread, an Instagram caption, and a newsletter section in minutes. The catch: "native" is the whole point. The same words pasted to four platforms is not four pieces of content; it is one piece failing three times.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">★ Try it now prompt</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A repurposing method that keeps each format native, hands-on time with the one-idea-to-many-formats simulator, one Cadence idea turned into four platform-native drafts, and a reusable repurposing workflow you will run every week.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: THE REPURPOSE ENGINE ============ -->
+  <section class="section" id="repurpose">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers the single-brief multimodal repurposing shift</span>
+      <h2>One idea, expressed natively everywhere <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">Start from one core idea, then adapt it to each platform's audience, format, and norms - not just its character limit. The idea is the constant; the expression changes. That is the difference between repurposing and copy-pasting.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="One core idea expands into four platform-native pieces: LinkedIn, X, Instagram, and newsletter - each tailored to its audience and format">
+        <style>
+          .b3rT { font: 700 14px Inter, sans-serif; fill: #FFFFFF; }
+          .b3rI { font: 700 13px Inter, sans-serif; fill: #1E1B2E; }
+          .b3rX { font: 400 11.5px Inter, sans-serif; fill: #6B6786; }
+          .b3rN { font: 600 14px Inter, sans-serif; fill: #1F2D07; }
+          .b3rArr { stroke: #CFCADF; stroke-width: 2.5; fill: none; marker-end: url(#b3rAh); }
+        </style>
+        <defs>
+          <marker id="b3rAh" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6" fill="none" stroke="#CFCADF" stroke-width="1.5"/>
+          </marker>
+        </defs>
+        <rect x="24" y="96" width="180" height="60" rx="12" fill="#4C1D95"/>
+        <text class="b3rT" x="46" y="122">One core idea</text>
+        <text class="b3rX" x="46" y="142" fill="#DDD6FE">the constant</text>
+        <line class="b3rArr" x1="206" y1="110" x2="300" y2="58"/>
+        <line class="b3rArr" x1="206" y1="122" x2="300" y2="118"/>
+        <line class="b3rArr" x1="206" y1="134" x2="300" y2="178"/>
+        <line class="b3rArr" x1="206" y1="140" x2="300" y2="238"/>
+        <rect x="304" y="32" width="230" height="46" rx="10" fill="#7C3AED"/>
+        <text class="b3rT" x="324" y="60">LinkedIn - pro + POV</text>
+        <rect x="304" y="94" width="230" height="46" rx="10" fill="#7C3AED"/>
+        <text class="b3rT" x="324" y="122">X - punchy hook + thread</text>
+        <rect x="304" y="156" width="230" height="46" rx="10" fill="#A78BFA"/>
+        <text class="b3rI" x="324" y="184" fill="#1E1B2E">Instagram - visual + POV</text>
+        <rect x="304" y="218" width="230" height="46" rx="10" fill="#DDD6FE"/>
+        <text class="b3rI" x="324" y="246">Newsletter - story + depth</text>
+        <rect x="574" y="112" width="282" height="60" rx="12" fill="#EEFAD9" stroke="#65A30D" stroke-width="1.5"/>
+        <text class="b3rI" x="596" y="136">Same idea, four native pieces</text>
+        <text class="b3rX" x="596" y="156">not the same post pasted 4 times</text>
+        <rect x="24" y="280" width="14" height="14" rx="3" fill="#65A30D"/>
+        <text class="b3rN" x="46" y="292">The idea stays constant; the audience, format, and hook change per platform.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - one idea fans out into four platform-native pieces</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Native means audience + format + hook, not just length<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Trimming a LinkedIn post to fit X is not repurposing; it is truncating. Native means rethinking each piece for who is actually on that platform and how they consume:</p>
+        <ul>
+          <li><strong>Audience</strong> - the same idea matters to a LinkedIn professional and an Instagram scroller for different reasons. Lead with the reason that fits.</li>
+          <li><strong>Format</strong> - length, structure, and rhythm differ: a thread is not a paragraph, a caption is not an essay.</li>
+          <li><strong>Hook</strong> - each platform rewards a different opener. The first line is a different job on X than in a newsletter.</li>
+          <li><strong>Voice + specifics stay</strong> - your brand voice and the real detail carry across all of them (rail one). Only the packaging changes.</li>
+        </ul>
+        <div class="prompt-box good"><span class="label">★ Try it now - one idea, two platforms</span>Here is one idea: [your idea in a sentence]. Write it two ways: a LinkedIn post (professional, point-of-view first) and an X thread opener (punchy hook). Same idea, genuinely different for each audience - not a trimmed copy.</div>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>One talk, a month of content.</strong> A creator took a single 20-minute talk and, with AI repurposing, turned it into a LinkedIn article, five posts, an X thread, a newsletter, and a set of captions - each native, all from one idea. The reach was not five times one post; it was five doors into the same room. That is a content engine.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The single-brief workflow<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The 2026 shift is generating a whole set from one brief: give the AI the core idea plus a per-platform spec (audience, format, hook style), and it drafts all of them at once - the move that compresses multi-channel production by around 60-70%. You still edit each for voice, truth, and specifics before it ships. The simulator below is exactly this workflow, made clickable.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ INTERACTIVE: THE SIMULATOR ============ -->
+  <section class="section" id="simulator">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · the one-idea-to-many-formats simulator</span>
+      <h2>Drive it yourself: watch one idea go native <span class="tag demo">★ 8 min · everyone plays</span></h2>
+    </div>
+    <p class="lede">Here is the whole lesson in one control panel. One core idea is being repurposed to four platforms. Every lever you turn on tailors it - the platform audience, the format rules, your brand voice, a native hook, real specifics. Watch the platform fit climb and the four drafts go from identical copy-paste to genuinely native. Flip to the scorecard to see how many platforms land.</p>
+
+    <div id="content-live"></div>
+
+    <div class="callout tip">
+      <strong>What the simulator is teaching</strong>
+      Start with everything off: the same generic post on all four platforms - the classic AI-at-scale failure. Add the audience and format and each piece starts to fit its home; add voice, a hook, and real specifics and all four become native. Repurposing, not copy-pasting, is what made the difference.
+    </div>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>Repurpose one Cadence idea to four platforms <span class="tag demo">★ 12 min · everyone builds</span></h2>
+    </div>
+    <p class="lede">Now do it for real. Take one idea for Cadence and generate four native pieces from a single brief, then edit each.</p>
+
+    <div class="steps">
+      <div class="step"><p>Pick one core idea worth telling (from b2 if you did it). State it in a sentence.</p></div>
+      <div class="step"><p>Write a single brief with a per-platform spec - audience, format, and hook style for LinkedIn, X, Instagram, and a newsletter - and have AI draft all four at once.</p></div>
+      <div class="step"><p>Read them side by side: are they genuinely native, or is one a trimmed copy? Push the weak ones with the platform's real norms.</p></div>
+      <div class="step"><p>Edit each for voice and one real specific (rail one). Verify any claim.</p></div>
+      <div class="step"><p>Save the brief as your repurposing template. One idea now becomes a week of native content in minutes.</p></div>
+    </div>
+
+    <div class="prompt-box good"><span class="label">★ The one-idea-to-many-formats prompt</span>Core idea (one sentence): [idea].
+Brand voice: [2-3 words + a "never say"]. Real specifics I can use: [1-2 facts/examples].
+
+Repurpose this into four NATIVE pieces - not the same text trimmed:
+- LinkedIn: professional, point-of-view first, ~120-150 words.
+- X: a punchy hook line + a 3-tweet thread outline.
+- Instagram: a visual-first caption with a scroll-stopping first line.
+- Newsletter: a short story lead + a 3-step takeaway.
+Keep my voice and the specifics in all four. Mark anything you invented as [verify].</div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>Build your repurposing workflow <span class="tag demo">★ 8 min · build your own</span></h2>
+    </div>
+    <p class="lede">Turn the one-off into a repeatable engine: a saved brief plus a per-platform spec you reuse every week.</p>
+
+    <div class="steps">
+      <div class="step"><p>Write down your real platform set and, for each, its audience, format, and hook style - your "platform spec" that never changes.</p></div>
+      <div class="step"><p>Combine it with the core-idea slot into one reusable brief. Each week you drop in a new idea and the specs do the rest.</p></div>
+      <div class="step"><p>Add your standing edit rules (voice, verify, one specific per piece) so quality rides along automatically.</p></div>
+      <div class="step"><p>Run it once on a second idea to prove it. You now have a repurposing engine, not a one-time trick.</p></div>
+    </div>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The weekly engine.</strong> A one-person brand went from posting sporadically to a native presence on four platforms - not by working more, but by building one repurposing brief and feeding it one good idea a week. The work moved from writing four things to having one idea worth four. That is the leverage this session unlocks.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 30-45 min total</span></h2>
+    </div>
+    <ul>
+      <li>Repurpose one real idea into four native pieces with the prompt, then edit each. Ship the two strongest.</li>
+      <li>Play the simulator again and predict the platform-fit score before each toggle - predicting it means you understand what "native" requires.</li>
+      <li>Write your platform spec (audience + format + hook per platform) and save the reusable repurposing brief.</li>
+      <li>Find one old post you copy-pasted across platforms and rewrite it native for two of them. Note the difference.</li>
+      <li>Optional: time how long a week of native content takes with the engine vs without.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Taught from public AI content curricula. Certificates stay official. This session covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Single-brief multimodal repurposing (creative-automation 2026)</span><span class="note">Parts 1-2 · one idea to many native formats, ~60-70% faster</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Coursera - Cross-Media Content Creation with Multimodal AI</span><span class="note">Demos · adapting one idea across media</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Platform-native content craft</span><span class="note">Part 1 · audience + format + hook per platform</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · In the simulator, what turns four copy-pasted posts into four native ones?</p>
+      <button class="qopt" type="button">A · A bigger model</button>
+      <button class="qopt" type="button">B · Posting more often</button>
+      <button class="qopt" type="button">C · Tailoring each to its platform - audience, format, voice, hook, and specifics</button>
+      <p class="qwhy">Native fit comes from tailoring, not from volume or model size. The same post pasted everywhere reaches no one.</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">2 · What does "native" repurposing mean?</p>
+      <button class="qopt" type="button">A · Trimming one post to each platform's character limit</button>
+      <button class="qopt" type="button">B · Rethinking the piece for each platform's audience, format, and hook - keeping the idea and voice constant</button>
+      <button class="qopt" type="button">C · Posting the same thing everywhere at once</button>
+      <p class="qwhy">The idea and your voice stay constant; the audience framing, format, and hook change per platform. Truncating is not repurposing.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · What is the single-brief workflow?</p>
+      <button class="qopt" type="button">A · Give AI the core idea + a per-platform spec and draft all formats at once, then edit each</button>
+      <button class="qopt" type="button">B · Write each platform's content from scratch separately</button>
+      <button class="qopt" type="button">C · Let AI publish directly to every platform</button>
+      <p class="qwhy">One brief with per-platform specs yields all formats fast (~60-70% faster) - and you still edit each for voice, truth, and specifics before it ships.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Creator session 3 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Repurpose is the engine</b><span>one idea, expressed natively everywhere - not ten unrelated things a week.</span></div>
+      <div class="cheat-item"><b>Native ≠ trimmed</b><span>rethink audience + format + hook per platform; the idea and voice stay constant.</span></div>
+      <div class="cheat-item"><b>Fit beats volume</b><span>the simulator proves it: the same post pasted everywhere scores zero; tailoring makes it native.</span></div>
+      <div class="cheat-item"><b>Single-brief workflow</b><span>core idea + per-platform spec -> all formats at once (~60-70% faster). Then edit each.</span></div>
+      <div class="cheat-item"><b>Keep across formats</b><span>your brand voice + one real specific ride into every piece (rail one).</span></div>
+      <div class="cheat-item"><b>Platform spec</b><span>audience + format + hook style per channel - the reusable half of your brief.</span></div>
+      <div class="cheat-item"><b>Edit still ships</b><span>native drafts are fast; the human edit for voice + truth is what publishes.</span></div>
+      <div class="cheat-item"><b>Next session</b><span>b4 - long-form writing: articles, newsletters, and scripts on brand and anti-slop.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Creator session 3 of 10 · learn-ai-content-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b2-idea-and-brief.html">← Previous: The idea + the brief</a> &nbsp;·&nbsp; <a href="b4-long-form-writing.html">Next: Long-form writing →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/content-live.js?v=1"></script>
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

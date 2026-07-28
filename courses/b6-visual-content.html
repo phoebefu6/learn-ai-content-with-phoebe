@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creator session 6 · Visual content - learn AI + content with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-content-with-phoebe</a> / Creator session 6 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Content with Phoebe · Creator track · Session 6 of 10</div>
+    <h1>Visual content: <span class="accent">on-brand images, rights kept clean</span></h1>
+    <p class="sub">AI image tools make graphics, covers, and social visuals in seconds, and that speed comes with a minefield: copyright, a living artist's style, real faces, and commercial-use terms. Tonight you build a locked prompt recipe so a batch of Cadence visuals stays on-brand, then run every image through a rights checklist before it can publish. By the end you can generate consistent visuals and know which ones are safe to ship.</p>
+    <div class="chip-row">
+      <span class="chip level">🟠 Creator track</span>
+      <span class="chip audience">Practitioners: creators · design · social</span>
+      <span class="chip audience">AI image tools + ChatGPT/Claude</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Warm-up</span>
+      <span class="a2" style="flex:4">3-22 · Prompts, the rights minefield, batching</span>
+      <span class="a3" style="flex:5">22-43 · Build-along: recipe + rights check</span>
+      <span class="a4" style="flex:1">43-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where you pick up Cadence tonight</h2>
+    </div>
+    <p class="lede">Cadence has words now - a core idea, long-form, and a social set. Visuals are how those words get seen: covers, social graphics, thumbnails. AI image tools make this fast, but they raise rail two from a footnote to the loudest voice in the room. A great-looking image that borrows a living artist's style, a real face, or copyrighted work is not an asset - it is a liability with your name on it. Tonight is speed and consistency, gated by a rights check that actually has teeth.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">★ Try it now prompt</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A locked prompt recipe that keeps a batch of Cadence visuals on-brand, a small on-brand set you generated - a post graphic and a cover - and a rights checklist you run on every image before "publish": IP, likeness, tool terms, and a human review.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: ON-BRAND IMAGE GENERATION ============ -->
+  <section class="section" id="on-brand">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · Coursera large-scale image gen + brand consistency</span>
+      <h2>On-brand image generation <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">Image models - Midjourney, DALL-E, and design suites - turn a text prompt into graphics, covers, and social visuals. The difference between a lucky one-off and a consistent brand set is the prompt recipe: a fixed structure of subject, style, palette, mood, and aspect ratio, plus a brand style reference so image after image looks like it belongs to the same brand. Random prompts give random results; a locked recipe gives a set.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A prompt recipe for on-brand images: subject, style, palette, mood, and aspect ratio combine with a brand style reference to produce a consistent visual set">
+        <style>
+          .b6xT { font: 700 15px Inter, sans-serif; fill: #FFFFFF; }
+          .b6xI { font: 700 15px Inter, sans-serif; fill: #1E1B2E; }
+          .b6xX { font: 400 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .b6xXi { font: 400 12.5px Inter, sans-serif; fill: #1F2D07; }
+          .b6xN { font: 600 14px Inter, sans-serif; fill: #1F2D07; }
+        </style>
+        <rect x="30" y="44" width="175" height="60" rx="10" fill="#4C1D95"/>
+        <text class="b6xT" x="50" y="70">Subject</text>
+        <text class="b6xX" x="50" y="90">what is shown</text>
+        <rect x="30" y="118" width="175" height="60" rx="10" fill="#7C3AED"/>
+        <text class="b6xT" x="50" y="144">Style</text>
+        <text class="b6xX" x="50" y="164">flat, photo, 3D</text>
+        <rect x="30" y="192" width="175" height="60" rx="10" fill="#A78BFA"/>
+        <text class="b6xT" x="50" y="218">Palette</text>
+        <text class="b6xX" x="50" y="238">brand colors</text>
+        <rect x="220" y="118" width="175" height="60" rx="10" fill="#7C3AED"/>
+        <text class="b6xT" x="240" y="144">Mood</text>
+        <text class="b6xX" x="240" y="164">calm, bold, warm</text>
+        <rect x="220" y="192" width="175" height="60" rx="10" fill="#A78BFA"/>
+        <text class="b6xT" x="240" y="218">Aspect</text>
+        <text class="b6xX" x="240" y="238">1:1, 16:9, 9:16</text>
+        <rect x="440" y="90" width="180" height="118" rx="12" fill="#DDD6FE"/>
+        <text class="b6xI" x="460" y="130">+ Brand</text>
+        <text class="b6xI" x="460" y="150">style ref</text>
+        <text class="b6xXi" x="460" y="176">locks the look</text>
+        <text class="b6xXi" x="460" y="194">across images</text>
+        <rect x="655" y="90" width="195" height="118" rx="12" fill="#EEFAD9" stroke="#65A30D" stroke-width="1.5"/>
+        <text class="b6xI" x="675" y="130">On-brand set</text>
+        <text class="b6xXi" x="675" y="156">a consistent batch,</text>
+        <text class="b6xXi" x="675" y="174">not a lucky</text>
+        <text class="b6xXi" x="675" y="192">one-off</text>
+        <rect x="30" y="270" width="14" height="14" rx="3" fill="#65A30D"/>
+        <text class="b6xN" x="54" y="282">A fixed recipe + a style ref gives a set. Random prompts give random results.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the prompt recipe: five fixed parts plus a brand style reference make a set</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The five-part recipe and the style reference<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Every strong image prompt answers five questions in the same order, so you can change the subject without losing the brand look. Then a style reference - a sample image or a reusable style code the tool supports - carries the look from one image to the next. That is the difference between a graphic and a graphics system.</p>
+        <ul>
+          <li><strong>Subject.</strong> What is literally in the frame - the object, scene, or concept.</li>
+          <li><strong>Style + palette.</strong> Flat illustration or photo, and the brand colors, stated every time.</li>
+          <li><strong>Mood + aspect.</strong> The feeling and the exact ratio for the format - 1:1 post, 16:9 cover, 9:16 story.</li>
+        </ul>
+        <div class="prompt-box good"><span class="label">★ Try it now (any image tool) - one recipe, two subjects</span>Flat vector illustration, [brand palette hex], calm and confident mood, 1:1. Subject: a single coffee cup on a clean desk. Then re-run with the same style line and Subject: a laptop and notebook. Notice they read as one set.</div>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>From lucky shots to a system.</strong> A creator kept generating great single images that looked nothing like each other, so the feed felt chaotic. They wrote one recipe - fixed style, palette, and mood - and swapped only the subject. Suddenly a month of visuals looked like one brand. The model did not get better; the recipe did the work.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Prompt patterns for consistency<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>Fix the style line, vary the subject.</strong> Keep style, palette, and mood identical across a batch; change only what is depicted.</li>
+          <li><strong>Use the tool's style features.</strong> Style references, seeds, or saved style codes are how you carry a look - learn the one your tool offers.</li>
+          <li><strong>State the aspect explicitly.</strong> Wrong ratio is the most common reason a good image is unusable. Match the format up front.</li>
+          <li><strong>Keep a recipe file.</strong> Save the working recipe as text so anyone on the team can regenerate on-brand visuals.</li>
+        </ul>
+        <p>This recipe is exactly what you lock in Demo 1. Consistency is a written recipe, not a lucky prompt.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: THE IP + LIKENESS MINEFIELD (LOUD) ============ -->
+  <section class="section" id="rights-minefield">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · IP, likeness, disclosure - the LOUD rail</span>
+      <h2>The IP + likeness minefield <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">Read this part twice. AI image generation is the single most rights-sensitive thing in this whole course, and a beautiful image is worth nothing if you did not have the right to make or publish it. Four risks matter, and each has a guardrail. None of these are optional, and "the tool let me" is not a defense.</p>
+
+    <table class="clean">
+      <thead><tr><th>Risk</th><th>The guardrail (non-negotiable)</th></tr></thead>
+      <tbody>
+        <tr><td>Copyright + training-data questions on generated images</td><td>Treat output as unsettled; do not rely on it for high-stakes use; use rights-clear inputs only</td></tr>
+        <tr><td>Mimicking a living artist's named style</td><td>Do not prompt "in the style of [living artist]" - describe the qualities you want instead</td></tr>
+        <tr><td>Likeness / right-of-publicity - real faces</td><td>No real person's face without permission; a recognizable face is a legal exposure, not a prop</td></tr>
+        <tr><td>Tool commercial-use terms vary by plan</td><td>Read the plan's commercial and ownership terms before any client or paid use</td></tr>
+      </tbody>
+    </table>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The four risks, said plainly<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>This is rail two turned all the way up. Every AI image can carry exposure that a text draft never could, and the human review before publishing is where you catch it. Speed is not a reason to skip it - it is the reason you need it.</p>
+        <ul>
+          <li><strong>Copyright is unsettled.</strong> Who owns AI output, and what the model trained on, are open legal questions. Do not treat a generated image as clearly yours; keep inputs rights-clear.</li>
+          <li><strong>Do not clone a living artist.</strong> Prompting a named living artist's style mimics their livelihood. Describe the look you want - colors, shapes, mood - not a person.</li>
+          <li><strong>Real faces are off-limits.</strong> A recognizable person's likeness has right-of-publicity protection. No real faces without explicit permission, full stop.</li>
+          <li><strong>Terms + disclosure + provenance.</strong> Commercial-use rights vary by tool and plan; disclose AI content where required (FTC); adopt content-credential and provenance practices as they mature.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>Say it before you generate</strong>
+          "Rights-clear inputs, no living-artist clone, no real faces, terms checked, human review before publish." If you cannot say all five about an image, it does not ship - no matter how good it looks.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Why "it looks fine" is not clearance<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>The risk is invisible in the pixels.</strong> An image can look original and still echo a copyrighted work, a living artist, or a real face. Looking good is not the same as being clear.</li>
+          <li><strong>Client and paid use raise the stakes.</strong> The more commercial the use, the more the rights question matters. Check the tool terms for exactly that use.</li>
+          <li><strong>Disclosure protects you too.</strong> Where AI content or endorsements require disclosure, doing it is not a weakness - it is what keeps the work defensible.</li>
+          <li><strong>Provenance is coming.</strong> Content credentials and watermarking are becoming table stakes; get in the habit now.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The cover that had to be pulled.</strong> A team shipped a striking AI cover generated "in the style of" a named living illustrator. It looked great and traveled fast - then the artist noticed. The image came down, an apology went out, and the lesson stuck: the guardrail is cheaper than the cleanup. Describe the look, never clone the person.</p>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: CONSISTENCY AT VOLUME ============ -->
+  <section class="section" id="consistency">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · the batch every visual week assumes</span>
+      <h2>Consistency at volume <span class="tag concept">4 min live</span></h2>
+    </div>
+    <p class="lede">One on-brand image is a nice prompt. A batch that all looks like Cadence, across formats, is a system - and a system needs a locked recipe plus templates. The other half of the discipline: a visual has to serve the message, not just decorate the post. A pretty image that says nothing is slop with better lighting.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Locked recipe + templates<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Once the recipe works, freeze it - the exact style line, palette, and mood - and build a small set of templates: a post size, a cover size, a story size. Now a batch of visuals stays on-brand because the recipe, not your mood that day, decides the look. And every image earns its place by carrying the message, not by being decoration.</p>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The recipe file that scaled a solo brand.</strong> A one-person brand wrote its visual recipe into a single saved text block plus three aspect templates. A month of covers, posts, and stories all read as one brand - made in minutes each, because the decisions were made once. When a teammate joined, they used the same file and the look never wavered.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Visuals serve the message<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>Lock the recipe.</strong> Save the style line, palette, mood, and per-format aspect ratios as a reusable file, not a memory.</li>
+          <li><strong>Template the formats.</strong> One recipe, a few fixed sizes - post, cover, story - so the batch is consistent by construction.</li>
+          <li><strong>Message first, decoration never.</strong> If the image does not clarify or carry the point, it is filler. Pretty and pointless is still slop.</li>
+        </ul>
+        <p>This locked recipe plus the rights checklist is what you hand into the b8 pipeline and govern at scale in b10.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>Lock a recipe, generate an on-brand set <span class="tag demo">★ 13 min · everyone builds</span></h2>
+    </div>
+    <p class="lede">Write one prompt recipe and use it to make a small Cadence visual set - a post graphic and a cover - that clearly belong together. Consistency by recipe, not by luck.</p>
+
+    <div class="steps">
+      <div class="step"><p>Use ChatGPT or Claude to draft a five-part recipe from the Cadence brand: subject slot, style, palette (state real hex), mood, and per-format aspect ratios.</p></div>
+      <div class="step"><p>Take the recipe to your image tool. Generate a 1:1 post graphic - keep the style line fixed, fill only the subject slot.</p></div>
+      <div class="step"><p>Re-run the same recipe at 16:9 for a cover, changing only the subject. Use the tool's style reference or seed to carry the look.</p></div>
+      <div class="step"><p>Put the two side by side. If they do not read as one brand, tighten the style line - not the subject - and regenerate.</p></div>
+      <div class="step"><p>Save the working recipe as text. That file is your on-brand generator for every future batch.</p></div>
+    </div>
+
+    <div class="prompt-box bad"><span class="label">The random ask - no consistency (do not use)</span>Make me a cool image for my post about our product. Something eye-catching and modern that will get attention, in the style of my favorite illustrator.</div>
+
+    <div class="prompt-box good"><span class="label">★ The recipe-drafting prompt (then generate in your image tool)</span>Help me write a reusable AI-image prompt recipe for the Cadence brand.
+Brand look: [describe - flat/photo, palette hex, mood].
+Structure it as five fixed slots I fill each time:
+1) Subject  2) Style  3) Palette  4) Mood  5) Aspect ratio (give 1:1, 16:9, 9:16).
+Rules: no living-artist names, no real faces. Output one reusable template I paste
+into my image tool, changing only the Subject.</div>
+
+    <div class="callout tip">
+      <strong>Why lock the recipe</strong>
+      Consistency is not talent, it is a written recipe. Freeze the style line and vary only the subject, and a batch of visuals looks like one brand - made in minutes, on purpose, not by luck.
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>Run the rights + brand checklist before publish <span class="tag demo">★ 8 min · build your own</span></h2>
+    </div>
+    <p class="lede">No AI image ships until it clears a checklist. You build the checklist once, then run each image from Demo 1 through it - IP, likeness, tool terms, disclosure, and a brand fit check. This is rail two with teeth.</p>
+
+    <div class="steps">
+      <div class="step"><p>Draft a pre-publish checklist with an AI: rights-clear inputs, no living-artist clone, no real faces, tool commercial terms checked, disclosure where required, human review, on-brand.</p></div>
+      <div class="step"><p>Take your post graphic from Demo 1 and answer every line honestly. Any "no" or "not sure" stops the image - fix it or drop it.</p></div>
+      <div class="step"><p>Run the cover through the same list. Confirm the tool's plan actually permits your intended use.</p></div>
+      <div class="step"><p>Only images that pass every line are marked "publish". Save the checklist - it becomes a gate in your b8 pipeline and your b10 governance.</p></div>
+    </div>
+
+    <div class="prompt-box good"><span class="label">★ The rights + brand checklist prompt</span>Draft a pre-publish checklist I run on every AI-generated image before posting.
+It must force a yes/no on:
+1) Are all inputs rights-clear (no others' copyrighted work)?
+2) Did I avoid cloning a living artist's named style?
+3) Are there zero real, recognizable faces without permission?
+4) Does the tool's plan permit this exact commercial use?
+5) Is AI disclosure handled where required, with provenance noted?
+6) Human-reviewed and on-brand?
+Any "no" or "unsure" = do not publish. Keep it one page, plain language.</div>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The checklist that caught it at the gate.</strong> A creator loved an AI cover until the checklist forced the question "any real faces?" - and the background had a recognizable person. It never published; a five-minute regeneration fixed it. The checklist did what admiration could not: it caught the exposure before the audience did. Human review before publish is the whole guardrail.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 30-45 min total</span></h2>
+    </div>
+    <ul>
+      <li>Finish both demos if you did not complete them live - especially locking the recipe. Consistency comes from the written recipe, not a lucky prompt.</li>
+      <li>Generate a three-image on-brand set from your recipe and run every image through the rights checklist before you would post it.</li>
+      <li>Read your image tool's commercial-use and ownership terms for the plan you are on. Note what it does and does not permit.</li>
+      <li>Save your recipe and your rights checklist as two reusable files. You will wire both into the b8 pipeline.</li>
+      <li>Optional: find one AI visual you already posted and run it through the checklist retroactively. If it would not pass now, note why.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Taught from public image-generation curricula and IP/rights canon. Certificates and paid tooling stay official. This session covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Coursera - Cross-Media Content Creation with Multimodal AI</span><span class="note">Part 1 · large-scale image gen, brand consistency across variations</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">IP / likeness / disclosure / provenance canon</span><span class="note">Part 2 · copyright, living-artist style, real faces, tool terms</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Prompt-pattern + brand-control practice</span><span class="note">Part 1 + Part 3 · the recipe, style refs, templates at volume</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Anti-slop / human-review practice</span><span class="note">Part 3 + Demo 2 · visuals serve the message; review before publish</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · How do you keep a batch of AI visuals on-brand?</p>
+      <button class="qopt" type="button">A · Generate lots and pick the best-looking ones</button>
+      <button class="qopt" type="button">B · Use a different tool for each image</button>
+      <button class="qopt" type="button">C · Lock a prompt recipe - subject, style, palette, mood, aspect - and use a brand style reference</button>
+      <p class="qwhy">Consistency is a written recipe, not luck. Fix the style line and style ref, vary only the subject, and the batch reads as one brand.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · Which of these is a real rights risk in AI image generation?</p>
+      <button class="qopt" type="button">A · Cloning a living artist's style, using a real face, or ignoring the tool's commercial terms</button>
+      <button class="qopt" type="button">B · Using too many colors in one image</button>
+      <button class="qopt" type="button">C · Choosing the wrong aspect ratio</button>
+      <p class="qwhy">Copyright, a living artist's named style, likeness/right-of-publicity, and commercial-use terms are all live exposures. "The tool let me" is not a defense.</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">3 · Before an AI image can publish, you must...</p>
+      <button class="qopt" type="button">A · Nothing - if it looks good it is safe to post</button>
+      <button class="qopt" type="button">B · Run a human review against a rights checklist: IP, likeness, tool terms, disclosure</button>
+      <button class="qopt" type="button">C · Only add your logo to it</button>
+      <p class="qwhy">Looking good is not clearance. The human review before publish is where you catch the exposure the pixels hide - it is the whole guardrail.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Creator session 6 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The prompt recipe</b><span>subject, style, palette, mood, aspect - five fixed slots so you change the subject, not the brand.</span></div>
+      <div class="cheat-item"><b>Brand style reference</b><span>a sample image, seed, or style code that carries the look from one image to the next.</span></div>
+      <div class="cheat-item"><b>Copyright is unsettled</b><span>who owns AI output and what it trained on are open questions. Keep inputs rights-clear.</span></div>
+      <div class="cheat-item"><b>No living-artist clone</b><span>never prompt "in the style of [living artist]". Describe the look - colors, shapes, mood.</span></div>
+      <div class="cheat-item"><b>No real faces</b><span>likeness / right-of-publicity. A recognizable face without permission is exposure, not a prop.</span></div>
+      <div class="cheat-item"><b>Check the terms</b><span>commercial-use rights vary by tool + plan. Read them before any client or paid use.</span></div>
+      <div class="cheat-item"><b>Human review before publish</b><span>looking good is not clearance. Run the rights checklist on every image - any "no" stops it.</span></div>
+      <div class="cheat-item"><b>Message over decoration</b><span>a visual serves the point. Pretty and pointless is still slop.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Creator session 6 of 10 · learn-ai-content-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b5-short-form-social.html">← Previous: Short-form &amp; social</a> &nbsp;·&nbsp; <a href="b7-video-audio.html">Next: Video &amp; audio →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

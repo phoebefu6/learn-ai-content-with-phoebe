@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creator session 4 · Long-form writing - learn AI + content with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-content-with-phoebe</a> / Creator session 4 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Content with Phoebe · Creator track · Session 4 of 10</div>
+    <h1>Long-form writing: <span class="accent">outline, draft, and the edit that earns it</span></h1>
+    <p class="sub">Articles, newsletters, and scripts are where AI's speed is most tempting and most dangerous - long enough to hide a lot of slop. Tonight you run the real workflow: outline, draft, then the edit where it becomes yours. You teach the model your voice with a few samples, kill the AI tells, and fact-check every claim. Walk out with a Cadence article draft that is on brand and reads like a person wrote it - because you did the part that counts.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Creator track</span>
+      <span class="chip audience">Practitioners: writers · content · editorial</span>
+      <span class="chip audience">ChatGPT or Claude · no code</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-21 · Pipeline, anti-slop, formats</span>
+      <span class="a3" style="flex:5">21-42 · Build-along: draft + edit</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where long-form gets won or lost</h2>
+    </div>
+    <p class="lede">You have a sharp idea and a brief from b2, and in b3 you saw one idea fan out into many formats. Now you write the anchor piece: the long-form article, newsletter, or script that everything else points back to. Long-form is where AI can save you the most time and cost you the most credibility, because a 700-word draft can be fluent and hollow at the same time. The workflow that keeps it yours is simple and repeatable: <strong>outline, draft, edit</strong> - and the edit is where the real writing happens.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">★ Try it now prompt</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A Cadence long-form draft - an article or newsletter section - built from your b2 brief, taught in your voice with a few writing samples, run through an anti-slop edit pass, and fact-checked. On brand, specific, and unmistakably yours.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: OUTLINE, DRAFT, EDIT ============ -->
+  <section class="section" id="pipeline">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · the workflow that keeps long-form yours</span>
+      <h2>Outline, draft, edit <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">Long-form works as three moves. AI is genuinely great at the first two - it can outline a shape and produce a fast draft from your brief in seconds. But the draft it hands back is a generic 70%: fluent, structured, and forgettable. The edit is where you make it specific, true, and yours. And the fastest way to get a draft worth editing is to teach the model your voice with two or three samples before it writes a word - few-shot, not from memory.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Long-form pipeline: brief to outline to AI draft to voice and anti-slop edit to fact-check to publish, with the human owning voice and facts">
+        <defs>
+          <marker id="b4xAh" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 Z" fill="#CFCADF"/>
+          </marker>
+        </defs>
+        <style>
+          .b4xT { font: 700 15px Inter, sans-serif; fill: #FFFFFF; }
+          .b4xI { font: 700 15px Inter, sans-serif; fill: #1E1B2E; }
+          .b4xX { font: 400 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .b4xXi { font: 400 12.5px Inter, sans-serif; fill: #1F2D07; }
+          .b4xN { font: 600 14px Inter, sans-serif; fill: #1F2D07; }
+        </style>
+        <rect x="22" y="46" width="150" height="72" rx="12" fill="#DDD6FE"/>
+        <text class="b4xI" x="40" y="78">Brief</text>
+        <text class="b4xXi" x="40" y="98" fill="#6B6786">from b2</text>
+        <line x1="172" y1="82" x2="204" y2="82" stroke="#CFCADF" stroke-width="2" marker-end="url(#b4xAh)"/>
+        <rect x="208" y="46" width="150" height="72" rx="12" fill="#A78BFA"/>
+        <text class="b4xT" x="226" y="78">Outline</text>
+        <text class="b4xX" x="226" y="98">AI shapes it</text>
+        <line x1="358" y1="82" x2="390" y2="82" stroke="#CFCADF" stroke-width="2" marker-end="url(#b4xAh)"/>
+        <rect x="394" y="46" width="150" height="72" rx="12" fill="#A78BFA"/>
+        <text class="b4xT" x="412" y="78">AI draft</text>
+        <text class="b4xX" x="412" y="98">few-shot voice</text>
+        <line x1="544" y1="82" x2="576" y2="82" stroke="#CFCADF" stroke-width="2" marker-end="url(#b4xAh)"/>
+        <rect x="580" y="46" width="150" height="72" rx="12" fill="#7C3AED"/>
+        <text class="b4xT" x="598" y="72">Voice +</text>
+        <text class="b4xT" x="598" y="92">anti-slop edit</text>
+        <rect x="394" y="150" width="150" height="72" rx="12" fill="#7C3AED"/>
+        <text class="b4xT" x="412" y="182">Fact-check</text>
+        <text class="b4xX" x="412" y="202">verify claims</text>
+        <line x1="655" y1="118" x2="546" y2="152" stroke="#CFCADF" stroke-width="2" marker-end="url(#b4xAh)"/>
+        <line x1="394" y1="186" x2="248" y2="186" stroke="#CFCADF" stroke-width="2" marker-end="url(#b4xAh)"/>
+        <rect x="22" y="150" width="220" height="72" rx="12" fill="#4C1D95"/>
+        <text class="b4xT" x="40" y="182">Publish</text>
+        <text class="b4xX" x="40" y="202">on brand + true</text>
+        <rect x="580" y="150" width="278" height="72" rx="12" fill="#EEFAD9" stroke="#65A30D" stroke-width="1.5"/>
+        <text class="b4xI" x="600" y="180">You own voice + facts</text>
+        <text class="b4xXi" x="600" y="200">AI drafts the first 70%; the edit is yours</text>
+        <rect x="22" y="272" width="14" height="14" rx="3" fill="#65A30D"/>
+        <text class="b4xN" x="46" y="284">AI accelerates outline and draft. Voice, specifics, and truth are the human edit - the value.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the long-form pipeline: AI drafts, the human edit owns voice and facts</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Teach voice with samples, not adjectives<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Telling the model "write in a warm, confident voice" gets you the average of warm and confident - which is to say, slop. Showing it two or three real samples of your writing gets you something that actually sounds like you. This is few-shot prompting: examples beat instructions every time, because the model can match a pattern far better than it can interpret a word. Paste your best paragraphs, say "match this voice", then let it draft. You have moved the draft from generic to nearly-yours before you have edited a single line.</p>
+        <ul>
+          <li><strong>Show, do not tell.</strong> Two or three of your real paragraphs teach voice better than any list of adjectives.</li>
+          <li><strong>The outline is cheap to fix.</strong> Argue with the outline before you draft - reordering a draft costs far more than reordering a list.</li>
+          <li><strong>The draft is raw clay.</strong> Never ship the AI draft. It is the fast 70%; the edit is where the piece earns the reader.</li>
+        </ul>
+        <div class="prompt-box good"><span class="label">★ Try it now (any chat AI) - few-shot voice</span>Here are two paragraphs I wrote: [paste]. Study the rhythm, sentence length, and how I open and close. Now write a new 150-word paragraph on [topic] that matches that voice. Do not add facts I did not give you.</div>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The newsletter that stopped sounding like a robot.</strong> A writer kept getting drafts that were technically fine and completely characterless. She stopped describing her voice and started pasting three of her own past issues as examples. The next draft had her cadence, her asides, her way of starting mid-thought. Same model, same topic - the difference was showing it who she was instead of telling it.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Why the edit is the real writing<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>In long-form, the edit is not clean-up - it is where the piece is actually written. The AI draft gives you a structure and a rough surface. The edit does the four things that make it worth publishing:</p>
+        <ul>
+          <li><strong>Voice:</strong> rewrite the openings and transitions in your own cadence - that is where AI tells hide.</li>
+          <li><strong>Specificity:</strong> replace at least one vague passage with a real example, number, or story only you have.</li>
+          <li><strong>Point of view:</strong> sharpen the claim so the piece takes the side your b2 idea promised.</li>
+          <li><strong>Truth:</strong> verify every fact, stat, and quote - or cut it.</li>
+        </ul>
+        <p>Do these four and a generic draft becomes a piece that could only be yours. Skip them and you have published fast, fluent slop.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: ON-BRAND + ANTI-SLOP ============ -->
+  <section class="section" id="anti-slop">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · kill the tells, keep the specifics</span>
+      <h2>On-brand + anti-slop <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">AI-written long-form has tells - the giveaways that make a reader think "a machine wrote this" and stop trusting it. They are predictable, which means they are fixable. On brand means two things at once: it sounds like you (voice, taught with samples) and it serves the reader (one idea per section, skimmable, no filler). The anti-slop edit is mostly a hunt for tells, replacing each with a real specific.</p>
+
+    <table class="clean">
+      <thead><tr><th>The AI tell</th><th>The fix</th></tr></thead>
+      <tbody>
+        <tr><td>Generic opener - "In today's fast-paced world..."</td><td>Open on a specific: a moment, a number, a real line someone said.</td></tr>
+        <tr><td>Hedging - "can help", "may", "some would argue"</td><td>Commit to the claim your b2 idea makes. Take the side.</td></tr>
+        <tr><td>Listicle sameness - every section the same shape</td><td>Vary rhythm: one idea per section, some short, some with a story.</td></tr>
+        <tr><td>Empty summary - "In conclusion, it is important to..."</td><td>End on a real takeaway or a line only you would write.</td></tr>
+        <tr><td>Vague nouns - "solutions", "leverage", "in order to"</td><td>Name the actual thing; use plain verbs. Cut the corporate fog.</td></tr>
+        <tr><td>No proof - confident but nothing concrete</td><td>Add one real example, number, or story per section.</td></tr>
+      </tbody>
+    </table>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Structure for the reader, not the word count<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Long-form fails when it is structured to fill a length instead of to be read. The fix is discipline the reader can feel: one idea per section, a clear line of argument, and a shape someone can skim and still follow. AI happily pads - it will give you five sections that all say the same thing in slightly different words. Your edit cuts that to the sections that each add something, and makes every heading earn its place.</p>
+        <ul>
+          <li><strong>One idea per section.</strong> If two sections make the same point, merge them and cut the weaker.</li>
+          <li><strong>Skimmable by design.</strong> Headings that carry meaning, short paragraphs, no wall of text - respect the reader's time.</li>
+          <li><strong>Keep the specifics, cut the filler.</strong> Every sentence that is not a specific or a real point is a candidate for deletion.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>The one-specific rule</strong>
+          No section ships without at least one real specific - a number, an example, a story, a named thing. It is the single fastest way to move a section from slop to substance.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The read-aloud test<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Before you publish, read the piece aloud. It is the cheapest slop detector there is. The tells announce themselves the moment you hear them:</p>
+        <ul>
+          <li>If a sentence sounds like a brand brochure, it is a tell - rewrite it the way you would say it to a colleague.</li>
+          <li>If you run out of breath, the sentence is too long - break it.</li>
+          <li>If a paragraph could be deleted and nothing is lost, delete it.</li>
+          <li>If you cannot point to one real specific on the page, you have not finished editing.</li>
+        </ul>
+        <p>Reading aloud catches in thirty seconds what re-reading silently hides for hours.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: SCRIPTS + NEWSLETTERS ============ -->
+  <section class="section" id="formats">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · same method, different container</span>
+      <h2>Scripts + newsletters <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">A newsletter and a video or podcast script are still long-form - the structure differs, the edit discipline does not. Outline, draft with few-shot voice, then edit for voice, specifics, point of view, and truth. What changes is the shape the reader or listener needs; what stays is that AI drafts fast and you own the version that ships.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Newsletters and scripts, the same spine<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A newsletter is an article with a relationship - it opens like a note to someone you know, moves fast, and earns the next open by being useful, not by being long. A script is written for the ear, not the eye - shorter sentences, spoken rhythm, a clear beat structure so a listener never gets lost. Both come from the same b2 idea and brief, and both live or die on the same edit. Draft the shape with AI; make it yours by hand.</p>
+        <ul>
+          <li><strong>Newsletter:</strong> a personal open, one idea, skimmable middle, a single clear takeaway. Write to one reader, not a list.</li>
+          <li><strong>Script:</strong> write for the ear - short lines, spoken cadence, a hook in the first ten seconds, beats a listener can follow.</li>
+          <li><strong>Same edit either way:</strong> voice via samples, one real specific per section, sharpen the POV, mark and check every claim.</li>
+        </ul>
+        <div class="prompt-box good"><span class="label">★ Try it now (any chat AI) - reshape, do not re-slop</span>Here is my article draft: [paste]. Reshape it into a 200-word newsletter open - personal, written to one reader, one idea, ending on a single takeaway. Keep my specifics. Mark [verify] on any claim. Do not add facts.</div>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>One idea, three containers.</strong> A creator took a single b2 idea and shipped it as an article, a newsletter, and a five-minute video script in an afternoon. AI reshaped the structure for each; she re-edited the voice and kept the same real proof throughout. Readers, subscribers, and viewers all met the same sharp idea in the form that fit them. The method did not change - only the container did.</p>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>Draft a Cadence piece with few-shot voice <span class="tag demo">★ 13 min · everyone builds</span></h2>
+    </div>
+    <p class="lede">Take your b2 brief and draft a Cadence article or newsletter section - taught in your voice with real samples, and marked up for fact-checking as you go. You will edit it hard in Demo 2.</p>
+
+    <div class="steps">
+      <div class="step"><p>Open your b2 Cadence brief. Paste the idea, audience, angle, proof, and format into ChatGPT or Claude.</p></div>
+      <div class="step"><p>Give it two or three real paragraphs of your own writing as voice samples. Say "match this voice - rhythm, openings, how I close".</p></div>
+      <div class="step"><p>Ask for an outline first. Argue with it: reorder, cut, make sure each section carries one idea. Only then ask it to draft.</p></div>
+      <div class="step"><p>Instruct it to write <code>[verify]</code> next to any fact, stat, or quote it introduces - and never to invent proof. Your real specifics from the brief go where you marked them.</p></div>
+      <div class="step"><p>Read the draft once. Do not fix it yet. Just notice where it sounds like you and where the AI tells crept in - that is your Demo 2 target list.</p></div>
+    </div>
+
+    <div class="prompt-box bad"><span class="label">The thin prompt - drafts pure slop (do not use)</span>Write a 700-word article about how Cadence helps teams stay productive.</div>
+
+    <div class="prompt-box good"><span class="label">★ The few-shot draft prompt</span>Write from this brief: [paste b2 brief - idea, audience, angle, proof, format].
+Match my voice - here are 2 samples of my writing: [paste].
+
+First give me an outline: one idea per section, in a logical argument.
+Wait for my edits. Then draft to that outline.
+Rules: use only the proof I gave you. Write [verify] next to any claim, stat,
+or quote. Do not invent facts. Skimmable - short paragraphs, headings that carry
+meaning. This is a first draft I will edit, not the final.</div>
+
+    <div class="callout tip">
+      <strong>Why mark [verify] as you draft</strong>
+      Fact-checking after the fact means hunting for buried claims. Marking them as they appear turns the fact-check into a checklist - and makes the rail-one promise ("no fabricated facts") something you can actually enforce.
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>Run the anti-slop edit pass <span class="tag demo">★ 8 min · build your own</span></h2>
+    </div>
+    <p class="lede">This is where the piece becomes yours. Take the Demo 1 draft and run a real edit: cut the tells, add a real specific, sharpen the POV, and clear every <code>[verify]</code>. Use AI to find the slop, then do the edit by hand.</p>
+
+    <div class="steps">
+      <div class="step"><p>Ask AI to flag the tells - generic openers, hedging, listicle sameness, empty summaries, vague nouns - but tell it not to rewrite. You want a list, not a new draft.</p></div>
+      <div class="step"><p>Rewrite the opening and the closing in your own voice. These carry the most tells and matter the most - a person opens on a specific, not "in today's world".</p></div>
+      <div class="step"><p>Add at least one real specific to every thin section - a number, an example, a story only you have. Apply the one-specific rule.</p></div>
+      <div class="step"><p>Sharpen the claim so the piece clearly takes the side your b2 idea promised. Cut the hedging around it.</p></div>
+      <div class="step"><p>Clear every <code>[verify]</code>: confirm the fact, source it, or cut it. Then read the whole thing aloud once - fix anything that sounds like a brochure. Ship that.</p></div>
+    </div>
+
+    <div class="prompt-box good"><span class="label">★ The anti-slop edit prompt (then edit by hand)</span>Here is my draft: [paste]. Do not rewrite it.
+1) List every AI tell to cut: generic openers, hedging, listicle sameness,
+   empty summaries, vague nouns like "leverage" or "solutions".
+2) Flag every section with no real specific - where I must add a number,
+   example, or story.
+3) List every claim still marked [verify] that I must confirm or cut.
+Be blunt about what reads as AI. I will do the edit myself.</div>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The eight-minute edit that changed the piece.</strong> A writer ran a fluent AI draft through one anti-slop pass: cut two generic openers, replaced a vague claim with a real customer number, sharpened a hedge into an actual opinion, and killed one invented stat that had slipped in. Eight minutes. The piece went from "clearly AI" to "clearly hers" - and it was the specific and the opinion, not the length, that readers responded to.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 30-45 min total</span></h2>
+    </div>
+    <ul>
+      <li>Finish both demos if you did not complete them live - especially the anti-slop edit pass. Watching a fluent draft become yours is the lesson.</li>
+      <li>Build a reusable voice-sample block: paste your three best paragraphs into a note you can drop into any drafting prompt.</li>
+      <li>Take your Cadence draft and reshape it into a newsletter open using the Part 3 prompt. Keep the specifics, re-check the claims.</li>
+      <li>Run the read-aloud test on one real piece this week. Note every sentence that sounded like a brochure - those are your personal tells.</li>
+      <li>Optional: keep a running list of the AI tells you cut most often. That list becomes your default edit pass, formalised in b9.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Taught from the content-craft canon and 2026 AI content practice. Certificates and paid tooling stay official. This session covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Content-craft canon - structure, editing, distinctiveness</span><span class="note">Part 1-2 · outline-draft-edit; the edit is the value</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Anti-slop practice - the AI tells and their fixes</span><span class="note">Part 2 + demos · kill tells, add real specifics</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Coursera multimodal - brand consistency across formats</span><span class="note">Part 3 · few-shot voice; newsletters + scripts</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Own-your-voice + no-fabrication rails</span><span class="note">Demos · voice + facts are human; full anti-slop in b9</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · In the outline-draft-edit workflow, where is the value?</p>
+      <button class="qopt" type="button">A · The outline - shape decides everything</button>
+      <button class="qopt" type="button">B · The draft - a fast draft is the finished piece</button>
+      <button class="qopt" type="button">C · The edit - AI drafts a generic 70%; voice, specifics, POV, and verified facts are the human 30%</button>
+      <p class="qwhy">AI accelerates outline and draft, but the edit is where a fluent, forgettable draft becomes specific, true, and yours. Never ship the raw draft.</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">2 · What is the best way to teach the model your voice?</p>
+      <button class="qopt" type="button">A · Describe it with adjectives like "warm" and "confident"</button>
+      <button class="qopt" type="button">B · Show it two or three real samples of your writing - few-shot</button>
+      <button class="qopt" type="button">C · Use a bigger model</button>
+      <p class="qwhy">Examples beat instructions. The model matches a pattern far better than it interprets a word, so real samples get a draft that actually sounds like you.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · Which are core anti-slop moves on a long-form draft?</p>
+      <button class="qopt" type="button">A · Cut generic openers and hedging, add a real specific per section, sharpen the POV, and fact-check every claim</button>
+      <button class="qopt" type="button">B · Make it longer and add more sections</button>
+      <button class="qopt" type="button">C · Add more adjectives and a strong conclusion</button>
+      <p class="qwhy">The anti-slop edit hunts the tells and replaces each with something real. One specific per section plus a verified fact is what moves a piece from AI to yours.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Creator session 4 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Outline, draft, edit</b><span>AI is great at outline + draft; the edit is where long-form becomes yours. Never ship the raw draft.</span></div>
+      <div class="cheat-item"><b>Teach voice with samples</b><span>few-shot beats adjectives - paste 2-3 real paragraphs and say "match this voice".</span></div>
+      <div class="cheat-item"><b>The four edit moves</b><span>voice, specificity, point of view, truth. Do these and a generic draft becomes only-yours.</span></div>
+      <div class="cheat-item"><b>Kill the AI tells</b><span>generic openers, hedging, listicle sameness, empty summaries, vague nouns - fix each with a real specific.</span></div>
+      <div class="cheat-item"><b>One-specific rule</b><span>no section ships without a real number, example, or story. Fastest slop-to-substance move there is.</span></div>
+      <div class="cheat-item"><b>Structure for the reader</b><span>one idea per section, skimmable, headings that carry meaning. Cut anything that just fills length.</span></div>
+      <div class="cheat-item"><b>Read-aloud test</b><span>sounds like a brochure? rewrite it. Out of breath? break it. Nothing lost if deleted? delete it.</span></div>
+      <div class="cheat-item"><b>Mark [verify], fact-check</b><span>flag every claim as you draft; confirm, source, or cut before publishing. No fabricated facts.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Creator session 4 of 10 · learn-ai-content-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b3-one-idea-many-formats.html">← Previous: One idea, many formats</a> &nbsp;·&nbsp; <a href="b5-short-form-social.html">Next: Short-form &amp; social →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

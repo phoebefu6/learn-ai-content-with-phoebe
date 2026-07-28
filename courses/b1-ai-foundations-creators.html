@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creator session 1 · AI foundations for content creators - learn AI + content with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-content-with-phoebe</a> / Creator session 1 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Content with Phoebe · Creator track · Session 1 of 10</div>
+    <h1>AI foundations for content creators: <span class="accent">speed without the slop</span></h1>
+    <p class="sub">Before you generate a single piece, one honest hour: what AI is genuinely great at in content, the one thing it does that gets content ignored - it produces fluent, generic slop - and the two rails that keep the work yours. By the end you can turn AI's speed into content people actually remember, instead of more noise nobody reads.</p>
+    <div class="chip-row">
+      <span class="chip level">🟢 Creator track</span>
+      <span class="chip audience">Practitioners: creators · writers · content teams</span>
+      <span class="chip audience">ChatGPT or Claude · no code</span>
+      <span class="chip time">Start here</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · What AI does for content</span>
+      <span class="a3" style="flex:5">18-42 · Build-along: slop vs edited</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>How this track works</h2>
+    </div>
+    <p class="lede">Ten sessions, all hands-on, all building one thing: <strong>Cadence's content engine</strong> - the ongoing content operation for a sample product you may have branded and marketed in the sibling courses. Tonight you learn what the tool is; then b2 sharpens the idea and brief, b3 turns one idea into many formats with a live simulator, and b4-b10 build the long-form, social, visual, video, pipeline, and governance of a real content operation. No code, ever. Two rails run through all ten, starting now.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">★ Try it now prompt</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A clear model of what AI can and cannot be trusted to do in content, the anti-slop instinct (AI drafts fast, the human edit is what earns the reader), a two-rail habit you will use every session, and your own one-page content AI ground rules.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: WHAT AI IS FOR CONTENT ============ -->
+  <section class="section" id="what-ai-is">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers the 2026 AI content-creation foundations</span>
+      <h2>What AI actually is - for a content creator <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">A large language model predicts the most likely next words. For content that makes it a phenomenal draft-and-variation engine - fast, tireless, multi-format - and a dangerous one, because "most likely" is another word for average. Left alone it produces content that is fluent, confident, and instantly forgettable. The speed is real; so is the slop. The whole craft is turning one into content and not the other.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="What to trust AI with in content: strong at drafting, variations, repurposing, and structure; risky at facts, originality, and voice by default - the human edit is what earns the reader">
+        <style>
+          .b1cT { font: 700 15px Inter, sans-serif; fill: #FFFFFF; }
+          .b1cI { font: 700 15px Inter, sans-serif; fill: #1E1B2E; }
+          .b1cX { font: 400 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .b1cXi { font: 400 12.5px Inter, sans-serif; fill: #1F2D07; }
+          .b1cN { font: 600 14px Inter, sans-serif; fill: #1F2D07; }
+        </style>
+        <rect x="30" y="46" width="195" height="96" rx="12" fill="#7C3AED"/>
+        <text class="b1cT" x="52" y="84">Draft &amp; vary</text>
+        <text class="b1cX" x="52" y="106">first drafts + many</text>
+        <text class="b1cX" x="52" y="124">variations, fast</text>
+        <rect x="240" y="46" width="195" height="96" rx="12" fill="#A78BFA"/>
+        <text class="b1cT" x="262" y="84">Repurpose</text>
+        <text class="b1cX" x="262" y="106">one idea into many</text>
+        <text class="b1cX" x="262" y="124">formats + platforms</text>
+        <rect x="450" y="46" width="195" height="96" rx="12" fill="#DDD6FE"/>
+        <text class="b1cI" x="472" y="84">Structure &amp; outline</text>
+        <text class="b1cXi" x="472" y="106">shape, headings,</text>
+        <text class="b1cXi" x="472" y="124">a place to start</text>
+        <rect x="660" y="46" width="195" height="96" rx="12" fill="#EEFAD9" stroke="#65A30D" stroke-width="1.5"/>
+        <text class="b1cI" x="682" y="84">Slop + facts ✗</text>
+        <text class="b1cXi" x="682" y="106">generic, invented -</text>
+        <text class="b1cXi" x="682" y="124">the human edit fixes</text>
+        <rect x="30" y="250" width="14" height="14" rx="3" fill="#65A30D"/>
+        <text class="b1cN" x="54" y="262">AI drafts at the average. The human edit is what makes it specific, true, and worth reading.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the content reliability map: three you can trust, one the edit must fix</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The slop problem - why fluent is not the same as good<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Because the model generates the most likely phrasing, everyone prompting it lazily gets the same beige output: "In today's fast-paced world...", the tidy three-bullet list, the confident summary that says nothing. It reads fine and lands nowhere. Multiply that by volume and you have flooded your own channels with content that trains your audience to scroll past you. Slop is not a typo problem; it is an averageness problem.</p>
+        <ul>
+          <li><strong>Fluent is cheap now.</strong> Grammatical, structured, confident text is free. That means it is no longer a signal of quality - or of you.</li>
+          <li><strong>It invents facts and quotes.</strong> Confident statistics and testimonials that do not exist. In content, publishing one is a credibility hit you do not get back.</li>
+          <li><strong>The edit is the value.</strong> AI gets you to a fast, generic 70%; the specific detail, the real story, the point of view, and the truth-check - the 30% that earns the reader - is human.</li>
+        </ul>
+        <div class="prompt-box good"><span class="label">★ Try it now (any chat AI) - feel the slop</span>Write a LinkedIn post about productivity. Now write 4 more. Notice how interchangeable and generic they are - that is the average talking, and it is exactly what floods everyone's feed.</div>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The brand that published its way into silence.</strong> A team used AI to triple its output overnight. Six months later engagement had cratered - not because the content was wrong, but because it was indistinguishable from everyone else's AI content. They cut volume by half, edited hard, and added a real point of view. Reach recovered. Speed had been the easy part; the edit was the job.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The can / cannot table - pin this to your monitor<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <table class="clean">
+          <thead><tr><th>Trust it to...</th><th>Never trust it to (the human does)</th></tr></thead>
+          <tbody>
+            <tr><td>Draft fast and generate many variations</td><td>Produce facts, stats, or quotes from memory</td></tr>
+            <tr><td>Repurpose one idea across formats</td><td>Have a real point of view</td></tr>
+            <tr><td>Outline and structure a piece</td><td>Sound like you by default</td></tr>
+            <tr><td>Adapt tone and length on request</td><td>Judge what is actually distinctive</td></tr>
+            <tr><td>Suggest hooks and angles to pick from</td><td>Decide what is true and what ships</td></tr>
+          </tbody>
+        </table>
+        <p>The left column is a build-along later in this track. The right column is why every session pairs AI's speed with your edit, your voice, and your judgment.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: THE TOOL LANDSCAPE ============ -->
+  <section class="section" id="tool-landscape">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers the 2026 multimodal content-tool landscape</span>
+      <h2>The content AI tool landscape, 2026 <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">The big 2026 shift is multimodal: text, image, video, and audio generated together from a single brief. The tools cluster into three layers - and the right question is which layer fits the format, and whether it is safe for your inputs.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 310" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three layers of content AI tools: general assistants for text, specialized tools for image video and audio, and multimodal from a single brief - with a rights line">
+        <style>
+          .b1sT { font: 700 15px Inter, sans-serif; fill: #FFFFFF; }
+          .b1sI { font: 700 15px Inter, sans-serif; fill: #1E1B2E; }
+          .b1sX { font: 400 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .b1sXi { font: 400 12.5px Inter, sans-serif; fill: #6B6786; }
+          .b1sN { font: 600 14px Inter, sans-serif; fill: #1F2D07; }
+        </style>
+        <rect x="30" y="40" width="540" height="58" rx="12" fill="#DDD6FE"/>
+        <text class="b1sI" x="54" y="66">Multimodal from one brief</text>
+        <text class="b1sI" x="54" y="86" font-weight="400" font-size="12.5">text + image + video + audio together - the 2026 production shift</text>
+        <rect x="30" y="120" width="540" height="58" rx="12" fill="#7C3AED"/>
+        <text class="b1sT" x="54" y="146">Specialized by format</text>
+        <text class="b1sX" x="54" y="166">Midjourney / DALL-E (image) · Runway (video) · ElevenLabs (voice)</text>
+        <rect x="30" y="200" width="540" height="58" rx="12" fill="#4C1D95"/>
+        <text class="b1sT" x="54" y="226">General assistants (text)</text>
+        <text class="b1sX" x="54" y="246">ChatGPT · Claude · Gemini - ideas, drafts, repurposing, structure</text>
+        <rect x="610" y="120" width="240" height="138" rx="12" fill="#EEFAD9" stroke="#65A30D" stroke-width="1.5"/>
+        <text class="b1sI" x="632" y="148">The rights line</text>
+        <text class="b1sXi" x="632" y="172">Client work, real faces,</text>
+        <text class="b1sXi" x="632" y="190">others' IP -&gt; clear it +</text>
+        <text class="b1sXi" x="632" y="208">check commercial terms.</text>
+        <text class="b1sXi" x="632" y="232">Your own inputs -&gt; any</text>
+        <text class="b1sXi" x="632" y="250">tool, then edit.</text>
+        <rect x="30" y="284" width="14" height="14" rx="3" fill="#65A30D"/>
+        <text class="b1sN" x="54" y="296">Speed varies by tool; the edit and the rights check are the same on all of them.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - three tool layers plus the multimodal shift, and one rights line</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Text, specialized, and multimodal<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>General assistants</strong> (ChatGPT, Claude, Gemini) - your workhorses for ideas, drafts, repurposing, and structure. Where most of this track lives.</li>
+          <li><strong>Specialized by format</strong> - image (Midjourney, DALL-E), video (Runway and similar), voice (ElevenLabs). You will meet these in b6 and b7.</li>
+          <li><strong>Multimodal from one brief</strong> - the 2026 shift: one brief produces text, visuals, a video script, and audio together, compressing multi-channel production by around 60-70%. Powerful, and exactly where the anti-slop edit matters most.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>One-question test before you generate</strong>
+          "Do I have the rights to every input, and would I be fine publishing the output under my name?" Your own material - any tool, then edit. Others' IP, real faces, or client-confidential work - clear it first and check the tool's commercial terms.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The 2026 landscape at a glance<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>Text:</strong> ChatGPT, Claude, Gemini for ideation, drafting, repurposing, and editing support.</li>
+          <li><strong>Image:</strong> Midjourney, DALL-E, and design suites for graphics, covers, and social visuals.</li>
+          <li><strong>Video + audio:</strong> Runway and similar for video, ElevenLabs for voice - the fastest-moving, most rights-sensitive layer.</li>
+          <li><strong>The trend:</strong> multimodal production from a single brief, refined with brand controls and real performance feedback. The bottleneck is no longer making content - it is keeping it distinctive and true.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: THE TWO RAILS ============ -->
+  <section class="section" id="two-rails">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · the habit every later session assumes</span>
+      <h2>The two rails: own the voice, respect the rights <span class="tag concept">4 min live</span></h2>
+    </div>
+    <p class="lede">Everything else in this course is technique. These two rails are non-negotiable, and they are what separate a creator who uses AI to make more of what only they could make from one who floods the world with forgettable slop.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Rail 1 - own your voice and your claims<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>AI drafts; you own every word, fact, and point of view that ships under your name. That means the human edit is non-negotiable: no fabricated statistics or quotes, real specifics over generic filler, and a genuine perspective the model cannot supply. Distinctiveness beats volume every time - one piece that sounds like you outperforms ten that sound like everyone.</p>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The edit is the author.</strong> Anyone can generate a draft now; that is not the value you add. The value is the sentence only you would write, the story only you lived, the number you actually checked. Treat the AI draft as raw clay and the edit as the sculpture. Ship the sculpture, never the clay.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Rail 2 - respect the rights (IP, likeness, disclosure)<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>AI-generated text, images, video, and voice carry real exposure: copyright and training-data questions, likeness and right-of-publicity for real people, and disclosure rules for AI content. Use rights-clear inputs, check the tool's commercial-use terms, disclose AI where required, and adopt provenance practices as they mature.</p>
+        <ul>
+          <li><strong>Inputs must be clear.</strong> Do not feed others' copyrighted work or a real person's likeness without rights.</li>
+          <li><strong>Outputs need a check.</strong> AI images can echo a living artist's style or a recognizable face - review before publishing, and mind the tool's terms.</li>
+          <li><strong>Disclose + provenance.</strong> Where AI content or endorsements require disclosure (FTC), do it; content-credential and authenticity practices are becoming table stakes.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>Say it out loud once</strong>
+          "AI drafts, I own the voice and the claims, and I respect the rights." That sentence is the spine of the whole creator track.
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>Slop vs edited - see the edit earn the reader <span class="tag demo">★ 12 min · everyone builds</span></h2>
+    </div>
+    <p class="lede">The single most important habit in the course, in one experiment. Take a raw AI draft, then run a real edit pass, and watch generic slop become something worth publishing.</p>
+
+    <div class="steps">
+      <div class="step"><p>Ask any chat AI for a short piece on a topic you know - a post, a paragraph, an intro. Take the raw draft as-is.</p></div>
+      <div class="step"><p>Read it critically: circle every generic phrase ("in today's world", "game-changer"), every claim you cannot verify, and every place it could be anyone.</p></div>
+      <div class="step"><p>Now edit: cut the filler, replace one vague claim with a real specific from your own experience, add one sentence only you would write, and verify any fact.</p></div>
+      <div class="step"><p>Compare the two. The edited version is shorter, truer, and unmistakably yours - and it took minutes. That delta is the whole job.</p></div>
+      <div class="step"><p>Name the three edit moves you made. Those become your default anti-slop pass, which you will formalize in b9.</p></div>
+    </div>
+
+    <div class="prompt-box bad"><span class="label">The raw draft - generic slop (do not ship)</span>In today's fast-paced world, productivity is more important than ever. AI tools are game-changers that can help you work smarter, not harder. Here are some tips to unlock your potential and take your workflow to the next level.</div>
+
+    <div class="prompt-box good"><span class="label">★ The edit-pass prompt (then edit by hand)</span>Here is an AI draft: [paste]. Do not rewrite it for me - instead:
+1) List every generic phrase and cliche to cut.
+2) Flag every claim, stat, or quote I must verify or remove.
+3) Point to the two places that could be written by anyone, where I should add a
+   real specific or a personal point of view.
+Then I will do the edit myself. Be blunt about what is slop.</div>
+
+    <div class="callout tip">
+      <strong>Why this is demo one</strong>
+      Every later session is a variation on "draft fast, then edit to specific-true-yours". Long-form (b4), social (b5), and the anti-slop pass (b9) are this same move. Learn it once tonight.
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>Write your content AI ground rules <span class="tag demo">★ 10 min · build your own</span></h2>
+    </div>
+    <p class="lede">A reusable artifact you will keep: a short "how we make content with AI" card. You draft it with AI, then edit it - which is rail one in miniature.</p>
+
+    <div class="steps">
+      <div class="step"><p>Give the AI the two rails and your context: what you publish, the channels, and what is confidential or client-owned.</p></div>
+      <div class="step"><p>Ask for a one-page card with three lists: <em>Green light</em> (safe uses - drafts, variations, repurposing, structure), <em>Red light</em> (never: publishing unedited, fabricated facts/quotes, others' IP or likeness without rights), and <em>Always</em> (human edit, verify facts, keep the voice, disclose + check rights).</p></div>
+      <div class="step"><p>Edit it hard. Add your real channels and the lines your brand or clients draw. The AI draft is 70%; your judgment is the 30% that matters.</p></div>
+      <div class="step"><p>Share it with your team. You will refine it in the leader session a3 (voice + anti-slop) and the creator finale b10 (governance + publishing).</p></div>
+    </div>
+
+    <div class="prompt-box good"><span class="label">★ The ground-rules prompt</span>Draft a one-page "content AI ground rules" card for our team.
+Context: we publish [formats/channels]; some work is client-owned or confidential;
+approved tools are [list, or "none yet"].
+
+Build it around two rails:
+1) We own the voice and the claims: the human edit is required, no fabricated facts or
+   quotes, distinctiveness over volume.
+2) We respect the rights: rights-clear inputs, no likeness without permission, disclose
+   AI where required, check tool commercial terms.
+
+Format: three short lists - Green light, Red light, Always. Plain language, one page.</div>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The card that saved a team from its own speed.</strong> A content team adopted AI and quietly started shipping unedited drafts to hit volume targets. A one-page card - "nothing publishes without a human edit and a rights check" - reset the standard. Output stayed high; quality came back. The rule was cheaper than the reputation it protected.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 30-45 min total</span></h2>
+    </div>
+    <ul>
+      <li>Finish both demos if you did not complete them live - especially slop-vs-edited. Feeling the edit earn the reader is the lesson.</li>
+      <li>Run the edit-pass prompt on one real AI draft this week. Keep the three edit moves you made most often.</li>
+      <li>Finalise your one-page content AI ground rules and share it with a teammate.</li>
+      <li>Screenshot the five near-identical posts from the Part 1 "feel the slop" prompt - that is your reminder of what volume-without-edit looks like.</li>
+      <li>Optional: pick one channel where your content has drifted toward the average, and note what a real point of view would add.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Taught from public AI content curricula and content-craft practice. Certificates and paid tooling stay official. This session covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Coursera - Cross-Media Content Creation with Multimodal AI</span><span class="note">Part 1-2 · what AI does across formats; the tool landscape</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">2026 AI content-scaling + creative-automation reports</span><span class="note">Part 2 · multimodal from one brief, ~60-70% faster</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Content-craft + anti-slop practice</span><span class="note">Part 1 + demos · the human edit; full depth in b9</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">IP / disclosure / provenance canon</span><span class="note">Part 3 · rail two, sourced in the course map</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · What is "AI slop"?</p>
+      <button class="qopt" type="button">A · Content with typos</button>
+      <button class="qopt" type="button">B · Fluent, generic, forgettable content that reads fine and lands nowhere - the average talking</button>
+      <button class="qopt" type="button">C · Any AI-assisted content</button>
+      <p class="qwhy">The model drafts at the most-likely average, so lazy prompting yields interchangeable, forgettable content. Fluent is now cheap; distinctiveness is the signal.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">2 · Where is the value a creator adds now that AI drafts are free?</p>
+      <button class="qopt" type="button">A · Generating more drafts, faster</button>
+      <button class="qopt" type="button">B · Using a bigger model</button>
+      <button class="qopt" type="button">C · The human edit - specifics, a real point of view, verified facts, your voice</button>
+      <p class="qwhy">AI gets you a generic 70%; the edit is the 30% that earns the reader. Ship the sculpture, not the clay.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · Before publishing AI-generated visuals or video, you must...</p>
+      <button class="qopt" type="button">A · Check rights on inputs and outputs, mind likeness, and disclose AI where required</button>
+      <button class="qopt" type="button">B · Nothing - AI output is always yours to use</button>
+      <button class="qopt" type="button">C · Only make it look good</button>
+      <p class="qwhy">Rail two. AI media carries copyright, likeness, and disclosure exposure. Clear the inputs, review the outputs, check the tool's terms, and disclose where required.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Creator session 1 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>AI for content</b><span>a draft-and-variation engine - fast, multi-format. But it drafts at the average.</span></div>
+      <div class="cheat-item"><b>AI slop</b><span>fluent, generic, forgettable content. Fluent is cheap now; distinctiveness is the signal. Volume without edit = noise.</span></div>
+      <div class="cheat-item"><b>The edit is the value</b><span>AI gets a generic 70%; specifics + point of view + verified facts + your voice are the human 30%.</span></div>
+      <div class="cheat-item"><b>Trust it to</b><span>draft, vary, repurpose one idea to many formats, outline, suggest hooks.</span></div>
+      <div class="cheat-item"><b>Never trust unedited</b><span>facts, stats, quotes, originality, your voice-by-default, what actually ships.</span></div>
+      <div class="cheat-item"><b>The multimodal shift</b><span>one brief -> text + image + video + audio, ~60-70% faster. The edit matters most here.</span></div>
+      <div class="cheat-item"><b>Rail 1 - own it</b><span>human edit non-negotiable; no fabricated facts/quotes; distinctiveness beats volume.</span></div>
+      <div class="cheat-item"><b>Rail 2 - rights</b><span>rights-clear inputs, no likeness without permission, disclose AI, check tool terms + provenance.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Creator session 1 of 10 · learn-ai-content-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="../index.html">← All sessions</a> &nbsp;·&nbsp; <a href="b2-idea-and-brief.html">Next: The idea + the brief →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

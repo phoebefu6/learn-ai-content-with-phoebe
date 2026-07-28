@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creator session 7 · Video &amp; audio - learn AI + content with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-content-with-phoebe</a> / Creator session 7 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI + Content with Phoebe · Creator track · Session 7 of 10</div>
+    <h1>Video &amp; audio: <span class="accent">the multimodal frontier</span></h1>
+    <p class="sub">The highest-leverage layer - and the most rights-sensitive. AI can now produce video and voice from a brief, which is exactly why the script, the edit, and the rights check have to be airtight before you touch a generator. Tonight you write a Cadence short-video script, storyboard it, and plan a voiceover with a synthetic-media rights and disclosure check you can defend.</p>
+    <div class="chip-row">
+      <span class="chip level">🟠 Creator track</span>
+      <span class="chip audience">Practitioners: video · social · podcast</span>
+      <span class="chip audience">AI video/voice tools + ChatGPT/Claude</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:3">3-15 · Script + storyboard first</span>
+      <span class="a3" style="flex:4">15-30 · Video, voice &amp; rights</span>
+      <span class="a4" style="flex:4">30-42 · Build-along: short + voiceover</span>
+      <span class="a5" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Why video and audio are their own session</h2>
+    </div>
+    <p class="lede">Video and voice are where AI feels most like magic - a brief becomes a talking avatar, a script becomes a narrated clip in minutes. That leverage is real. So is the exposure: a voice or a face is a person's identity, and synthetic media carries likeness, copyright, deepfake, and disclosure risk that text never did. This is the one session where the rights rail is loud on purpose. The move is the same as every session before it: the story and the edit stay human, and here so does the question of whose voice and face you are allowed to use.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">★ Try it now prompt</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A Cadence 30-60 second short-video script (hook -> value -> CTA) with a shot list, a storyboard, and a voiceover plan that passes a synthetic-media rights and disclosure check - whose voice, whose face, is it cleared, is it disclosed. The frontier, done safely.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: SCRIPT + STORYBOARD FIRST ============ -->
+  <section class="section" id="script-first">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers script-and-storyboard-before-generation</span>
+      <h2>Script and storyboard first, generate second <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">Great AI video does not start in a video tool. It starts in a document: a written script and a storyboard. The generators - Runway-class video, ElevenLabs-class voice - are the production layer, and they are only as good as the story you hand them. Skip the writing and you get slick, generic clips nobody finishes. Write first, and the AI has something worth producing.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The AI video pipeline: idea and script, then storyboard, then AI video plus voice, then the human edit, then publish - the story and the edit stay human">
+        <defs>
+          <marker id="b7xAh" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#CFCADF"/></marker>
+        </defs>
+        <style>
+          .b7xT { font: 700 15px Inter, sans-serif; fill: #FFFFFF; }
+          .b7xI { font: 700 15px Inter, sans-serif; fill: #1E1B2E; }
+          .b7xX { font: 400 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .b7xXi { font: 400 12.5px Inter, sans-serif; fill: #1F2D07; }
+          .b7xN { font: 600 14px Inter, sans-serif; fill: #1F2D07; }
+        </style>
+        <rect x="18" y="50" width="150" height="92" rx="12" fill="#4C1D95"/>
+        <text class="b7xT" x="93" y="88" text-anchor="middle">Idea + script</text>
+        <text class="b7xX" x="93" y="110" text-anchor="middle">the story, written</text>
+        <rect x="190" y="50" width="150" height="92" rx="12" fill="#7C3AED"/>
+        <text class="b7xT" x="265" y="88" text-anchor="middle">Storyboard</text>
+        <text class="b7xX" x="265" y="110" text-anchor="middle">shots + framing</text>
+        <rect x="362" y="50" width="150" height="92" rx="12" fill="#A78BFA"/>
+        <text class="b7xT" x="437" y="80" text-anchor="middle">AI video + voice</text>
+        <text class="b7xX" x="437" y="102" text-anchor="middle">generators</text>
+        <text class="b7xX" x="437" y="120" text-anchor="middle">produce it</text>
+        <rect x="534" y="50" width="150" height="92" rx="12" fill="#EEFAD9" stroke="#65A30D" stroke-width="1.5"/>
+        <text class="b7xI" x="609" y="88" text-anchor="middle">Human edit</text>
+        <text class="b7xXi" x="609" y="110" text-anchor="middle">cut, pace, truth</text>
+        <rect x="706" y="50" width="150" height="92" rx="12" fill="#DDD6FE"/>
+        <text class="b7xI" x="781" y="88" text-anchor="middle">Publish</text>
+        <text class="b7xXi" x="781" y="110" text-anchor="middle">ship the short</text>
+        <line x1="170" y1="96" x2="187" y2="96" stroke="#CFCADF" stroke-width="2" marker-end="url(#b7xAh)"/>
+        <line x1="342" y1="96" x2="359" y2="96" stroke="#CFCADF" stroke-width="2" marker-end="url(#b7xAh)"/>
+        <line x1="514" y1="96" x2="531" y2="96" stroke="#CFCADF" stroke-width="2" marker-end="url(#b7xAh)"/>
+        <line x1="686" y1="96" x2="703" y2="96" stroke="#CFCADF" stroke-width="2" marker-end="url(#b7xAh)"/>
+        <rect x="18" y="222" width="14" height="14" rx="3" fill="#65A30D"/>
+        <text class="b7xN" x="42" y="234">AI produces the frames and the voice. The story and the final edit stay human.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the AI video pipeline: write and storyboard first, generate second, edit last</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The script and the storyboard carry the piece<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A short video is a tiny story with a job to do. The script decides the words and the beats; the storyboard decides what the viewer sees in each of them. Both are cheap to write and expensive to fix after generation, so you do them first, on paper, before a single clip is rendered. AI can help you draft both - it is good at structure and options - but you pick the hook, the pacing, and the payoff.</p>
+        <ul>
+          <li><strong>Script = the spine.</strong> Hook in the first two seconds, one clear value beat, one call to action. Short lines, spoken-word rhythm, no filler.</li>
+          <li><strong>Storyboard = the eyes.</strong> Shot by shot: what is on screen, the framing, the on-screen text, the transition. This is your shot list for the generator.</li>
+          <li><strong>Generate against a plan.</strong> With script and storyboard in hand, the video and voice tools produce to a brief instead of guessing - far less slop, far fewer regenerations.</li>
+        </ul>
+        <div class="prompt-box good"><span class="label">★ Try it now (any chat AI) - a 3-beat spine</span>Draft a 45-second short-video script on [topic] with three beats: a 2-second hook, one value beat, one call to action. Spoken-word rhythm, short lines. Give me two hook options. I will pick and edit - do not pad it.</div>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The clip that was beautiful and unwatched.</strong> A team generated a run of polished AI videos straight from one-line prompts. They looked great and nobody finished them - no hook, no point, no reason to stay. When they wrote a real script and storyboard first and let the tools produce to it, completion rates jumped. The generator was never the problem; the missing story was.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>A short-video script skeleton you can reuse<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Pin this shape for any 30-60 second short. It is the same hook-value-CTA spine you learned for social, tuned for the ear and the eye.</p>
+        <ul>
+          <li><strong>0-2s hook:</strong> the line or image that stops the scroll. Concrete, specific, a little tension.</li>
+          <li><strong>2-40s value:</strong> one idea, delivered in short spoken lines, each paired with a shot and on-screen text.</li>
+          <li><strong>40-45s CTA:</strong> one action - follow, read the full piece, try it. Not three.</li>
+          <li><strong>Under every line:</strong> a storyboard cell - shot, framing, on-screen text, transition - so production has no guesswork.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: VIDEO + VOICE, RIGHTS LOUD ============ -->
+  <section class="section" id="video-voice-rights">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · the rights rail, loud</span>
+      <h2>AI video + voice - with the rights rail loud <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">Text-to-video, AI avatars, text-to-speech, and voice cloning are powerful and legally loaded. A voice and a face are a person's identity, protected by likeness and right-of-publicity law; footage and music carry copyright; and synthetic media of a real person is where deepfake harm and disclosure rules live. This is not a footnote here - it is the session. Never clone a real person's voice or face without clear permission, and disclose synthetic media where it matters.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Powerful tools, real exposure - the rules that keep you safe<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The generators do not check rights for you - that is your job, and in video and voice the stakes are higher than anywhere else in this course. The rule of thumb is simple: if a real person's identity is involved, you need their permission in writing, and if the media is synthetic, you disclose it.</p>
+        <ul>
+          <li><strong>Voice and likeness are the person's.</strong> Cloning a real voice or generating a real face without documented, specific permission is a likeness and right-of-publicity problem - even if the tool makes it a one-click move.</li>
+          <li><strong>Inputs carry copyright.</strong> Footage, images, and music you feed in, or that a tool trained on, can be someone else's IP. Use rights-clear or licensed material and check the tool's commercial terms.</li>
+          <li><strong>Deepfake risk is reputational and legal.</strong> Realistic synthetic people are the highest-risk output you can make. When in doubt, do not.</li>
+          <li><strong>Disclose synthetic media.</strong> Where AI-generated or AI-altered people, voices, or endorsements appear, label them - platform rules and FTC-style disclosure are the norm, not the exception.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>The one-line gate for video and voice</strong>
+          "Whose voice and face is this, do I have written permission, and have I disclosed that it is synthetic?" If any answer is no, it does not publish. This is rail two at its loudest.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The rights guardrail, use by use<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <table class="clean">
+          <thead><tr><th>Use</th><th>The rights guardrail</th></tr></thead>
+          <tbody>
+            <tr><td>Text-to-video (generic scenes)</td><td>Check the tool's commercial terms; avoid recognizable real people, logos, and trademarks</td></tr>
+            <tr><td>AI avatars / presenters</td><td>Use licensed stock avatars or ones you have rights to; never a real person's face without written permission</td></tr>
+            <tr><td>Text-to-speech (synthetic voice)</td><td>Use the tool's licensed voices; confirm commercial use is allowed; disclose that the voice is synthetic</td></tr>
+            <tr><td>Voice cloning (a real voice)</td><td>Only with that person's documented, specific consent - never a public figure or a colleague on a whim</td></tr>
+            <tr><td>Music + stock footage</td><td>Licensed or rights-clear only; keep the licence on file</td></tr>
+            <tr><td>Any synthetic person or endorsement</td><td>Disclose it as AI-generated; follow platform and FTC-style rules</td></tr>
+          </tbody>
+        </table>
+        <p>When a row is uncertain, the answer is stop and clear it - not generate and hope. This table is your pre-publish checklist for every AI video and voice piece.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: REPURPOSE TO VIDEO ============ -->
+  <section class="section" id="repurpose-video">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · multimodal from one idea</span>
+      <h2>Repurpose an existing piece into video <span class="tag concept">4 min live</span></h2>
+    </div>
+    <p class="lede">You do not start from a blank page. The Cadence long-form article you wrote in b4 is already a source of stories, and one idea can become text, social, and now video. Turning a written piece into a short-video script is the fastest, safest way onto the frontier - the thinking is done, you are just changing the medium.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>From one article to a short-video script<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Take the strongest single idea from the b4 article - one insight, one story, one number - and rebuild it for the ear and eye. A 1,200-word article is not a script; you extract its best 45 seconds and rewrite for spoken rhythm and on-screen visuals. Same idea, native to video. This is the multimodal-from-one-idea move you met in b3, now pointed at the highest-leverage format.</p>
+        <ul>
+          <li><strong>Extract, do not narrate.</strong> Pull the one beat that carries on screen; do not read the article aloud.</li>
+          <li><strong>Rewrite for the ear.</strong> Short spoken lines, a hook up front, one CTA - not article prose.</li>
+          <li><strong>Storyboard the visuals.</strong> Each spoken line gets a shot and on-screen text; that is your production brief.</li>
+        </ul>
+        <div class="prompt-box good"><span class="label">★ Try it now - article to short</span>Here is an article: [paste the b4 Cadence piece]. Pull the single strongest idea and turn it into a 45-second short-video script - 2-second hook, one value beat, one CTA - rewritten for spoken rhythm. Add a storyboard cell under each line. I will edit and check rights.</div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>Script + storyboard a Cadence short <span class="tag demo">★ 13 min · everyone builds</span></h2>
+    </div>
+    <p class="lede">Build the frontier piece from something you already have. Take an existing Cadence idea and turn it into a 30-60 second short-video script with a shot list and a storyboard - hook, value, CTA, ready to hand to a generator.</p>
+
+    <div class="steps">
+      <div class="step"><p>Pick one Cadence idea you have already used - from the brief in b2, the repurposing run in b3, or the b4 article. One idea, one clear point.</p></div>
+      <div class="step"><p>Ask a chat AI for a 45-second script with the three beats: a 2-second hook (give yourself two options), one value beat, one CTA. Spoken-word rhythm, short lines.</p></div>
+      <div class="step"><p>Ask it to add a storyboard cell under each line: shot, framing, on-screen text, transition. That is your shot list.</p></div>
+      <div class="step"><p>Now edit by hand: pick the hook, cut any filler, replace one generic line with a real Cadence specific, and make sure the CTA is a single action.</p></div>
+      <div class="step"><p>Read the script out loud against the storyboard. If it does not sound like a person and read cleanly shot by shot, fix it before any tool sees it.</p></div>
+    </div>
+
+    <div class="prompt-box good"><span class="label">★ The script + storyboard prompt (then edit by hand)</span>Turn this Cadence idea into a 45-second short-video script: [idea].
+Structure: 2-second hook, one value beat, one call to action. Spoken-word rhythm,
+short lines, no filler. Give me two hook options.
+Under every spoken line, add a storyboard cell:
+  - shot (what is on screen)
+  - framing (wide / close / text-only)
+  - on-screen text
+  - transition to the next shot
+Keep it to one clear idea. I will pick the hook and edit for voice.</div>
+
+    <div class="callout tip">
+      <strong>Why the storyboard is not optional</strong>
+      The storyboard is what makes AI video production predictable. Hand a generator a script with no shot list and it improvises - that is where slop comes from. A shot-by-shot plan turns generation into execution.
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>Voiceover plan + a rights &amp; disclosure check <span class="tag demo">★ 8 min · build your own</span></h2>
+    </div>
+    <p class="lede">Before that short gets a voice, plan it and clear it. You will decide how the piece is narrated and run a synthetic-media rights and disclosure check you could defend to a client or a platform.</p>
+
+    <div class="steps">
+      <div class="step"><p>Decide the voice: your own recorded voice, a licensed synthetic voice from the tool, or - only with written consent - a cloned voice. Write down which and why.</p></div>
+      <div class="step"><p>Answer the three rights questions in writing: whose voice is this, whose face or likeness appears, and is each one cleared with documented permission.</p></div>
+      <div class="step"><p>Check the inputs: is the music licensed, is any footage rights-clear, does the tool's commercial-use term cover what you are doing.</p></div>
+      <div class="step"><p>Decide disclosure: if the voice or any person is synthetic, write the label you will show and where it goes. Where required, it is not optional.</p></div>
+      <div class="step"><p>Keep the completed check with the piece. If any answer is "not cleared", the piece does not publish until it is.</p></div>
+    </div>
+
+    <div class="prompt-box good"><span class="label">★ The voiceover + rights-check prompt</span>Help me plan and clear the voiceover for a short video.
+Context: the narration option is [my own voice / a licensed synthetic voice / a cloned
+voice with written consent]; on-screen people are [none / stock avatar / a real person];
+music is [licensed / none]; the tool is [name].
+
+Produce a one-page check I can keep on file:
+1) Whose voice + whose face, and is each cleared with documented permission?
+2) Are all inputs (music, footage) rights-clear or licensed?
+3) Does the tool's commercial-use term cover this?
+4) Is synthetic media disclosed - what label, shown where?
+Flag anything that is "not cleared" as a blocker. Plain language.</div>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The voice that was not theirs to use.</strong> A team cloned a well-known creator's voice for a promo because the tool made it a two-minute job. It was fast, convincing, and a right-of-publicity problem the moment it published - a takedown and an apology followed. A thirty-second rights check would have caught it. On the frontier, the check is the work.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 30-45 min total</span></h2>
+    </div>
+    <ul>
+      <li>Finish both demos if you did not complete them live - a scripted, storyboarded Cadence short with a completed rights and disclosure check.</li>
+      <li>Repurpose the b4 Cadence article into one 45-second short-video script. Extract the single best idea, do not narrate the whole piece.</li>
+      <li>Fill in the one-page rights and disclosure check for that short. If any line is "not cleared", note what it would take to clear it.</li>
+      <li>Write your default voice policy in one line: your own voice, licensed synthetic, or cloned-only-with-written-consent - and stick to it.</li>
+      <li>Optional: if you have a video or voice tool, produce the first shot against your storyboard and feel how much the plan does the work.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Taught from public AI content and video curricula, voice-tool practice, and the IP canon. Certificates and paid tooling stay official. This session covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Coursera - Cross-Media Content Creation with Multimodal AI (video)</span><span class="note">Part 1 + demos · full video creation, script to storyboard</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">ElevenLabs-class voice / TTS practice</span><span class="note">Part 2 + demo 2 · synthetic voice, cloning, disclosure</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">IP / likeness / right-of-publicity / disclosure canon</span><span class="note">Part 2 · the loud rights rail, full depth in b10</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Multimodal-from-one-idea practice</span><span class="note">Part 3 · article to video, building on b3</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · Where does a good AI video start?</p>
+      <button class="qopt" type="button">A · In the video generator, with a one-line prompt</button>
+      <button class="qopt" type="button">B · With the fanciest tool you can afford</button>
+      <button class="qopt" type="button">C · With a written script and a storyboard - the generator produces to that plan</button>
+      <p class="qwhy">The script is the spine and the storyboard is the shot list. Generate against a plan and you get far less slop and far fewer regenerations. The story stays human.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · Before you clone a real person's voice or use their face, you must...</p>
+      <button class="qopt" type="button">A · Get their documented, specific permission, and disclose that the media is synthetic</button>
+      <button class="qopt" type="button">B · Nothing - if the tool lets you, it is fine</button>
+      <button class="qopt" type="button">C · Only make sure it sounds realistic</button>
+      <p class="qwhy">A voice and a face are a person's identity - likeness and right-of-publicity. Never clone a real person without written permission, and disclose synthetic media where required.</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">3 · The fastest safe way onto the video frontier is...</p>
+      <button class="qopt" type="button">A · Generating dozens of clips from scratch and picking the best</button>
+      <button class="qopt" type="button">B · Repurposing an existing piece - extract its strongest idea and rewrite it as a short-video script</button>
+      <button class="qopt" type="button">C · Copying a viral video shot for shot</button>
+      <p class="qwhy">One idea becomes text, social, and video. The b4 article already did the thinking - extract the best 45 seconds and rewrite for the ear and eye. Same idea, native to video.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Creator session 7 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Write first</b><span>script + storyboard before any generator. The tool produces to a plan, not a guess.</span></div>
+      <div class="cheat-item"><b>Script = spine</b><span>2-second hook, one value beat, one CTA. Spoken rhythm, short lines, no filler.</span></div>
+      <div class="cheat-item"><b>Storyboard = eyes</b><span>shot, framing, on-screen text, transition under every line. That is your shot list.</span></div>
+      <div class="cheat-item"><b>Voice + face = the person's</b><span>never clone a real voice or face without documented, specific permission.</span></div>
+      <div class="cheat-item"><b>Inputs carry copyright</b><span>licensed or rights-clear music and footage only; check the tool's commercial terms.</span></div>
+      <div class="cheat-item"><b>Disclose synthetic media</b><span>label AI-generated people, voices, and endorsements where required - the norm, not the exception.</span></div>
+      <div class="cheat-item"><b>The video/voice gate</b><span>whose voice + face, is it cleared in writing, is it disclosed? Any no = does not publish.</span></div>
+      <div class="cheat-item"><b>Repurpose to video</b><span>extract the one best idea from the b4 article and rewrite for the ear. Multimodal from one idea.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Creator session 7 of 10 · learn-ai-content-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b6-visual-content.html">← Previous: Visual content</a> &nbsp;·&nbsp; <a href="b8-content-pipeline.html">Next: The content pipeline &amp; workflow →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>
